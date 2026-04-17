@@ -1,0 +1,17 @@
+# Variáveis de ambiente e segredos
+.env
+.env.local
+.env.production
+
+# Configs com dados sensíveis
+config/secrets.php
+wp-config.php
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/settings.json
+*.suo
+*.user
