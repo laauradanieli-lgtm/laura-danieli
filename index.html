@@ -35,6 +35,8 @@
   @keyframes ldfloat2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(16px) rotate(-9deg)}}
   @keyframes ldspin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
   @keyframes ldshimmer{0%,100%{text-shadow:5px 5px 0 #43090f}50%{text-shadow:7px 7px 0 #9a1c26}}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{-webkit-tap-highlight-color:transparent}
 
 </style>
 </helmet>
@@ -44,6 +46,7 @@
 <div style="width:100%;overflow:hidden;font-family:'Archivo',sans-serif">
 
 <!-- ============ HERO ============ -->
+<sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
 <section data-screen-label="Hero" style="position:relative;overflow:hidden;background:#631018;color:#e9dfc7;min-height:100vh;display:flex;flex-direction:column;padding:clamp(22px,4vw,40px) clamp(22px,6vw,80px) clamp(56px,8vw,110px)">
   <div class="ld-poster" style="position:absolute;inset:0;z-index:0">
     <img src="assets/laura-hero.png" alt="Foto da Laura" style="width:100%;height:100%;object-fit:cover;object-position:78% 30%">
@@ -72,6 +75,30 @@
   </div>
 </section>
 
+</sc-if>
+<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+<section data-screen-label="Hero (mobile)" style="position:relative;overflow:hidden;background:#631018;color:#e9dfc7;min-height:100svh;display:flex;flex-direction:column">
+  <div style="position:relative;height:min(58svh,540px);min-height:330px;flex-shrink:0">
+    <img src="assets/laura-hero.png" alt="Foto da Laura" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:76% 30%">
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(50,7,11,.62) 0%,rgba(50,7,11,0) 24%,rgba(99,16,24,0) 44%,rgba(99,16,24,.84) 80%,#631018 100%)"></div>
+    <div style="position:absolute;top:20px;left:22px;right:22px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;opacity:.92">
+      <span>Psicóloga de mulheres</span>
+      <span style="text-align:right">Laura Danieli</span>
+    </div>
+    <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:17%;right:5%;width:44px;opacity:.7;transform-origin:center;animation:ldspin 44s linear infinite;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="3" stroke-linejoin="round"/></svg>
+  </div>
+  <div style="position:relative;z-index:2;margin-top:-108px;padding:0 22px 76px">
+    <h1 style="margin:0;line-height:1.12">
+      <span style="display:block;font-family:'Archivo',sans-serif;font-weight:400;font-size:1.12rem;line-height:1.32;opacity:.92;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) both">Entender sua história não é<br>olhar para o passado.</span>
+      <span style="display:block;font-family:'Archivo Black',sans-serif;font-size:2.75rem;letter-spacing:-.03em;line-height:.96;margin-top:.28em;text-shadow:3px 3px 0 #43090f;animation:ldrise 1s cubic-bezier(.2,.75,.2,1) .18s both">É parar de<br>repeti-lo.</span>
+    </h1>
+    <p style="font-family:'Archivo',sans-serif;font-weight:400;font-size:1rem;line-height:1.65;margin-top:22px;opacity:.9;text-wrap:pretty;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) .4s both">Atendimento psicológico para mulheres. Um lugar de escuta dedicado a acolher sua história, suas dúvidas e suas transições, dando clareza para você assumir suas próprias escolhas.</p>
+    <a href="{{ contactUrl }}" style="margin-top:28px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:16px 22px;background:#e9dfc7;color:#631018;font-family:'Archivo',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.02em;text-align:center;text-decoration:none;border-radius:100px;transition:transform .15s ease;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) .58s both" style-active="transform:scale(.98)">Quero entender como funciona →</a>
+  </div>
+  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:18px;right:22px;width:36px;opacity:.8;transform-origin:center;animation:ldfloat2 11s ease-in-out infinite;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#e9dfc7"/></svg>
+</section>
+</sc-if>
+
 <!-- ============ FRASE EM DESTAQUE (rotativa) ============ -->
 <div aria-label="Frases" style="position:relative;background-color:#43090f;background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.40) 0px,rgba(0,0,0,0.05) 4px,rgba(255,255,255,0.08) 7px,rgba(0,0,0,0.05) 10px,rgba(0,0,0,0.40) 13px);color:#e9dfc7;padding:clamp(48px,7vw,88px) clamp(22px,6vw,80px);min-height:clamp(240px,34vh,380px);display:flex;align-items:center;justify-content:center;overflow:hidden">
   <span style="position:absolute;top:18px;left:clamp(22px,6vw,80px);font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;opacity:.28">“</span>
@@ -80,7 +107,7 @@
 
 <!-- ============ IDENTIFICAÇÃO ============ -->
 <section data-screen-label="Identificação" style="position:relative;overflow:hidden;background-color:#e9dfc7;background-image:repeating-linear-gradient(90deg,rgba(120,96,58,0.18) 0px,rgba(120,96,58,0.04) 4px,rgba(255,255,255,0.34) 7px,rgba(120,96,58,0.04) 10px,rgba(120,96,58,0.18) 13px);color:#631018;padding:clamp(64px,10vw,150px) clamp(22px,6vw,80px)">
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:8%;right:4%;width:clamp(90px,12vw,170px);height:auto;opacity:.9;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="2.4" stroke-linejoin="round"/></svg>
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:8%;right:4%;width:clamp(90px,12vw,170px);height:auto;opacity:.9;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="2.4" stroke-linejoin="round"/></svg></sc-if><sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:18px;right:20px;width:44px;opacity:.9;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="3" stroke-linejoin="round"/></svg></sc-if>
   <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,80px);align-items:start">
     <h2 style="flex:1 1 360px;font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,5vw,4.2rem);line-height:.96;letter-spacing:-.02em">Este é um espaço seguro para ser quem você é.</h2>
     <div style="flex:1 1 420px;display:flex;flex-direction:column;gap:clamp(18px,2.4vw,26px);font-size:clamp(1.05rem,1.4vw,1.22rem);line-height:1.65;font-weight:500">
@@ -93,7 +120,7 @@
 
 <!-- ============ SOBRE A LAURA ============ -->
 <section data-screen-label="Sobre a Laura" style="position:relative;overflow:hidden;background-color:#631018;background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.40) 0px,rgba(0,0,0,0.05) 4px,rgba(255,255,255,0.10) 7px,rgba(0,0,0,0.05) 10px,rgba(0,0,0,0.40) 13px);color:#e9dfc7;padding:clamp(64px,10vw,150px) clamp(22px,6vw,80px)">
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:6%;right:5%;width:clamp(90px,12vw,160px);height:auto;opacity:.9;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#e9dfc7" opacity=".95"/></svg>
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:6%;right:5%;width:clamp(90px,12vw,160px);height:auto;opacity:.9;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#e9dfc7" opacity=".95"/></svg></sc-if><sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:16px;right:22px;width:38px;opacity:.9;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#e9dfc7"/></svg></sc-if>
   <div style="position:relative;z-index:1;max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(34px,5vw,64px);align-items:start">
     <div>
       <div style="aspect-ratio:4/5;width:100%;border-radius:6px;border:1.5px solid rgba(233,223,199,.4);overflow:hidden">
@@ -121,7 +148,7 @@
 <section data-screen-label="Como funciona" style="position:relative;overflow:hidden;background-color:#e9dfc7;background-image:repeating-linear-gradient(90deg,rgba(120,96,58,0.18) 0px,rgba(120,96,58,0.04) 4px,rgba(255,255,255,0.34) 7px,rgba(120,96,58,0.04) 10px,rgba(120,96,58,0.18) 13px);color:#631018;padding:clamp(64px,10vw,150px) clamp(22px,6vw,80px)">
   <div style="position:relative;z-index:1;max-width:1080px;margin:0 auto">
     <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,6.5vw,5rem);line-height:.95;letter-spacing:-.02em">Como é o processo</h2>
-    <div style="margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,3.5vw,48px) clamp(40px,5vw,72px)">
+    <div style="margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,3.5vw,48px) clamp(40px,5vw,72px)">
       <div style="border-top:2.5px solid #631018;padding-top:20px">
         <div style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,3vw,2.6rem);line-height:1">01</span><h3 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(1.15rem,1.8vw,1.4rem)">Para quem é</h3></div>
         <p style="margin-top:14px;font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.6;font-weight:500">Para mulheres que vivem momentos de transição, lidam com a sobrecarga de dar conta de tudo e buscam um lugar de escuta para entender suas próprias escolhas, sem precisar ter todas as respostas prontas.</p>
@@ -144,7 +171,7 @@
 
 <!-- ============ UNIVERSO CULTURAL ============ -->
 <section data-screen-label="Universo cultural" style="position:relative;overflow:hidden;background-color:#631018;background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.40) 0px,rgba(0,0,0,0.05) 4px,rgba(255,255,255,0.10) 7px,rgba(0,0,0,0.05) 10px,rgba(0,0,0,0.40) 13px);color:#e9dfc7;padding:clamp(64px,10vw,150px) clamp(22px,6vw,80px)">
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:7%;left:3%;width:clamp(70px,9vw,130px);height:auto;opacity:.55;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="2.4" stroke-linejoin="round"/></svg>
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:7%;left:3%;width:clamp(70px,9vw,130px);height:auto;opacity:.55;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="2.4" stroke-linejoin="round"/></svg></sc-if><sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:18px;left:22px;width:40px;opacity:.55;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="3" stroke-linejoin="round"/></svg></sc-if>
   <div style="position:relative;z-index:1;max-width:1080px;margin:0 auto">
     <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,6vw,4.6rem);line-height:.95;letter-spacing:-.02em;text-shadow:4px 4px 0 #43090f">Coisas que atravessam o meu universo</h2>
     <p style="margin-top:18px;font-size:clamp(1.05rem,1.7vw,1.35rem);font-weight:500;opacity:.9">Cultura pop também fala sobre quem somos.</p>
@@ -158,6 +185,7 @@
       </sc-for>
     </div>
 
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
     <div style="margin-top:clamp(34px,4vw,52px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.5vw,28px)">
       <sc-for list="{{ universeItems }}" as="item" hint-placeholder-count="3">
         <div style="border:1.5px solid rgba(233,223,199,.35);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:rgba(233,223,199,.03);animation:ldfade .6s ease both">
@@ -179,6 +207,28 @@
         </sc-for>
       </div>
     </sc-if>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div ref="{{ uniRowRef }}" onScroll="{{ onUniScroll }}" style="margin:34px calc(clamp(22px,6vw,80px) * -1) 0;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 clamp(22px,6vw,80px);padding:0 clamp(22px,6vw,80px) 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain">
+      <sc-for list="{{ universeAll }}" as="item" hint-placeholder-count="2">
+        <div style="flex:0 0 70%;scroll-snap-align:start;border:1.5px solid rgba(233,223,199,.35);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:rgba(233,223,199,.03)">
+          <div style="width:100%;aspect-ratio:2/3;background:rgba(67,9,15,.45)">
+            <img src="{{ item.cover }}" alt="{{ item.title }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="font-family:'Archivo Black',sans-serif;font-size:1.22rem;line-height:1.05;letter-spacing:-.02em;text-wrap:balance">{{ item.title }}</h3>
+            <sc-if value="{{ item.hasMeta }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.7">{{ item.meta }}</div></sc-if>
+            <p style="font-size:.95rem;line-height:1.5;font-weight:500;opacity:.92">{{ item.desc }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;gap:8px;justify-content:center;margin-top:22px">
+      <sc-for list="{{ uniMobileDots }}" as="dot" hint-placeholder-count="5">
+        <span style="width:7px;height:7px;border-radius:50%;background:{{ dot.bg }};transition:background .3s ease"></span>
+      </sc-for>
+    </div>
+    </sc-if>
   </div>
 </section>
 
@@ -188,7 +238,7 @@
     <div style="flex:1 1 300px">
       <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,6vw,4.4rem);line-height:.95;letter-spacing:-.02em">Entre Freud e a cultura pop</h2>
       <p style="margin-top:clamp(22px,3vw,32px);font-size:clamp(1.05rem,1.6vw,1.25rem);line-height:1.6;font-weight:500;max-width:42ch">No Instagram eu exploro psicanálise através de filmes, músicas, personagens e referências culturais da nossa geração. Porque a teoria fica mais viva quando ela toca algo que você já sentiu.</p>
-      <a href="{{ instagramUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;margin-top:clamp(26px,3vw,36px);background:#631018;color:#e9dfc7;font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(1rem,1.5vw,1.15rem);text-decoration:none;padding:17px 32px;border-radius:100px;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:0 14px 30px -12px rgba(99,16,24,.6)">Ver conteúdos no Instagram →</a>
+      <a href="{{ instagramUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;margin-top:clamp(26px,3vw,36px);background:#631018;color:#e9dfc7;font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(1rem,1.5vw,1.15rem);text-decoration:none;padding:17px clamp(22px,6vw,32px);border-radius:100px;max-width:100%;justify-content:center;text-align:center;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:0 14px 30px -12px rgba(99,16,24,.6)">Ver conteúdos no Instagram →</a>
       <div style="margin-top:18px;font-size:14px;font-weight:700;letter-spacing:.05em;opacity:.8">@psic.laaura</div>
     </div>
     <div style="flex:1.3 1 360px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,22px)">
@@ -215,6 +265,7 @@
         <a href="https://www.google.com/maps/search/?api=1&query=Rua+Giocondo+Felipe%2C+576%2C+Vila+Nova%2C+Francisco+Beltr%C3%A3o+-+PR" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#e9dfc7;border-bottom:1px solid rgba(233,223,199,.5);padding-bottom:2px">Ver no mapa →</a>
       </div>
     </div>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
     <div style="display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(2,clamp(140px,18vw,240px));gap:clamp(10px,1.4vw,16px);margin-top:clamp(36px,4.5vw,56px)">
       <div class="ld-poster" style="grid-column:span 3;grid-row:span 2;overflow:hidden;border-radius:8px;border:1.5px solid rgba(233,223,199,.35)"><img src="assets/espaco-4.png" alt="Fachada da clínica Diálogos" style="width:100%;height:100%;object-fit:cover"></div>
       <div class="ld-poster" style="grid-column:span 3;grid-row:span 1;overflow:hidden;border-radius:8px;border:1.5px solid rgba(233,223,199,.35)"><img src="assets/espaco-1.png" alt="Recepção" style="width:100%;height:100%;object-fit:cover"></div>
@@ -223,6 +274,15 @@
         <img src="assets/espaco-3.png" alt="Detalhe da sala" style="flex:1 1 0;width:auto;min-width:0;height:100%;object-fit:cover">
       </div>
     </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:36px">
+      <div style="grid-column:span 2;aspect-ratio:4/3;overflow:hidden;border-radius:8px;border:1.5px solid rgba(233,223,199,.35)"><img src="assets/espaco-4.png" alt="Fachada da clínica Diálogos" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="grid-column:span 2;aspect-ratio:16/11;overflow:hidden;border-radius:8px;border:1.5px solid rgba(233,223,199,.35)"><img src="assets/espaco-1.png" alt="Recepção" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="aspect-ratio:1;overflow:hidden;border-radius:8px;border:1.5px solid rgba(233,223,199,.35)"><img src="assets/espaco-2.png" alt="Sala de atendimento" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="aspect-ratio:1;overflow:hidden;border-radius:8px;border:1.5px solid rgba(233,223,199,.35)"><img src="assets/espaco-3.png" alt="Detalhe da sala" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+    </sc-if>
   </div>
 </section>
 
@@ -248,14 +308,14 @@
 
 <!-- ============ CTA FINAL ============ -->
 <section data-screen-label="CTA final" style="position:relative;overflow:hidden;background-color:#e9dfc7;background-image:repeating-linear-gradient(90deg,rgba(120,96,58,0.18) 0px,rgba(120,96,58,0.04) 4px,rgba(255,255,255,0.34) 7px,rgba(120,96,58,0.04) 10px,rgba(120,96,58,0.18) 13px);color:#631018;padding:clamp(80px,12vw,170px) clamp(22px,6vw,80px)">
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:10%;left:6%;width:clamp(70px,9vw,130px);height:auto;opacity:.85;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"/></svg>
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:10%;right:7%;width:clamp(80px,11vw,150px);height:auto;opacity:.85;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="2.4" stroke-linejoin="round"/></svg>
-  <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(36px,5vw,80px);align-items:center">
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:10%;left:6%;width:clamp(70px,9vw,130px);height:auto;opacity:.85;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"/></svg></sc-if><sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:24px;left:22px;width:38px;opacity:.85;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"/></svg></sc-if>
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:10%;right:7%;width:clamp(80px,11vw,150px);height:auto;opacity:.85;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="2.4" stroke-linejoin="round"/></svg></sc-if><sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:22px;right:22px;width:44px;opacity:.85;height:auto;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="3" stroke-linejoin="round"/></svg></sc-if>
+  <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(36px,5vw,80px);align-items:center">
     <h2 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,4.4vw,3.5rem);line-height:1.06;letter-spacing:-.025em;text-wrap:balance">Te faço o convite para caminharmos juntas.</h2>
     <div>
       <p style="font-family:'Archivo',sans-serif;font-weight:400;font-size:clamp(1.02rem,1.4vw,1.25rem);line-height:1.75;max-width:42ch;text-wrap:pretty">Se você sente que é hora de olhar para a sua história com mais cuidado e atenção, saiba que este é um espaço seguro.</p>
       <div style="margin-top:clamp(30px,4vw,44px)">
-        <a href="{{ contactUrl }}" style="display:inline-flex;align-items:center;gap:12px;background:#631018;color:#e9dfc7;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(.98rem,1.25vw,1.1rem);text-decoration:none;padding:18px 34px;border-radius:100px;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 34px -12px rgba(99,16,24,.6)">Quero agendar minha primeira conversa →</a>
+        <a href="{{ contactUrl }}" style="display:inline-flex;align-items:center;gap:12px;background:#631018;color:#e9dfc7;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(.98rem,1.25vw,1.1rem);text-decoration:none;padding:18px clamp(24px,6vw,34px);border-radius:100px;max-width:100%;justify-content:center;text-align:center;text-wrap:balance;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 34px -12px rgba(99,16,24,.6)">Quero agendar minha primeira conversa →</a>
       </div>
     </div>
   </div>
@@ -276,7 +336,8 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;quoteSecs&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:5,&quot;min&quot;:3,&quot;max&quot;:12,&quot;tsType&quot;:&quot;number&quot;},&quot;uniSecs&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:6,&quot;min&quot;:3,&quot;max&quot;:15,&quot;tsType&quot;:&quot;number&quot;},&quot;contactUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20entender%20como%20funciona.&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;instagramUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://instagram.com/psic.laaura&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;post1Url&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.instagram.com/p/DZqeyFvDjsL/&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;post2Url&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.instagram.com/p/DZV1I5NmkVC/&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 class Component extends DCLogic {
-  state = { activeTab: 'filmes', openFaq: 0, quoteIndex: 0, uniPage: 0 };
+  state = { activeTab: 'filmes', openFaq: 0, quoteIndex: 0, uniPage: 0, uniIdx: 0, isMobile: typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia('(max-width: 640px)').matches };
+  uniRowRef = React.createRef();
 
   quotes = [
     { text: 'Se o sofrimento realmente ensinasse, o mundo seria povoado apenas por sábios. A dor não tem nada a ensinar a quem não encontra coragem e força para ouvi-la.', author: 'Freud' },
@@ -288,6 +349,12 @@ class Component extends DCLogic {
   ];
 
   componentDidMount() {
+    if (window.matchMedia) {
+      this._mql = window.matchMedia('(max-width: 640px)');
+      this._onMq = (e) => this.setState({ isMobile: e.matches, uniIdx: 0 });
+      if (this._mql.addEventListener) this._mql.addEventListener('change', this._onMq); else this._mql.addListener(this._onMq);
+      if (this._mql.matches !== this.state.isMobile) this.setState({ isMobile: this._mql.matches });
+    }
     const secs = this.props.quoteSecs ?? 5;
     this._qTimer = setInterval(() => {
       this.setState(s => ({ quoteIndex: (s.quoteIndex + 1) % this.quotes.length }));
@@ -297,12 +364,15 @@ class Component extends DCLogic {
       this.setState(s => {
         const items = this.data[s.activeTab] || [];
         const pages = Math.max(1, Math.ceil(items.length / 3));
-        if (pages <= 1) return null;
+        if (pages <= 1 || s.isMobile) return null;
         return { uniPage: (s.uniPage + 1) % pages };
       });
     }, uSecs * 1000);
   }
-  componentWillUnmount() { clearInterval(this._qTimer); clearInterval(this._uniTimer); }
+  componentWillUnmount() {
+    clearInterval(this._qTimer); clearInterval(this._uniTimer);
+    if (this._mql) { if (this._mql.removeEventListener) this._mql.removeEventListener('change', this._onMq); else this._mql.removeListener(this._onMq); }
+  }
 
   data = {
     filmes: [
@@ -356,7 +426,16 @@ class Component extends DCLogic {
     { label: 'Livros', key: 'livros' },
   ];
 
-  setTab(key) { this.setState({ activeTab: key, uniPage: 0 }); }
+  setTab(key) {
+    if (this.uniRowRef.current) this.uniRowRef.current.scrollLeft = 0;
+    this.setState({ activeTab: key, uniPage: 0, uniIdx: 0 });
+  }
+  onUniScroll = (e) => {
+    const el = e.currentTarget, first = el.firstElementChild;
+    if (!first) return;
+    const i = Math.round(el.scrollLeft / (first.getBoundingClientRect().width + 14));
+    if (i !== this.state.uniIdx) this.setState({ uniIdx: i });
+  };
   toggleFaq(i) { this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })); }
 
   renderVals() {
@@ -369,17 +448,26 @@ class Component extends DCLogic {
       .map((it, k) => { const id = 'u-' + active + '-' + (activePage * 3 + k); return { ...it, hasMeta: !!it.meta, slotId: id, cover: 'assets/covers/' + id + '.webp' }; });
     const uniDots = Array.from({ length: pages }, (_, i) => ({ active: i === activePage, bg: i === activePage ? '#e9dfc7' : 'rgba(233,223,199,.32)' }));
     const secs = this.props.quoteSecs ?? 5;
+    const isMobile = !!this.state.isMobile;
+    const universeAll = allItems.map((it, k) => { const id = 'u-' + active + '-' + k; return { ...it, hasMeta: !!it.meta, slotId: id, cover: 'assets/covers/' + id + '.webp' }; });
+    const uniMobileDots = allItems.map((_, i) => ({ bg: i === this.state.uniIdx ? '#e9dfc7' : 'rgba(233,223,199,.32)' }));
     const q = this.quotes[this.state.quoteIndex];
     const ce = React.createElement;
     const currentQuote = ce('div', {
       key: this.state.quoteIndex,
-      style: { animation: 'ldquote ' + secs + 's ease-in-out both', maxWidth: '1000px', textAlign: 'center', position: 'relative', zIndex: 1 },
+      style: { animation: 'ldquote ' + secs + 's ease-in-out both', maxWidth: '1000px', textAlign: 'center', position: 'relative', zIndex: 1, ...(isMobile ? { minHeight: '220px', paddingTop: '26px', display: 'flex', flexDirection: 'column', justifyContent: 'center' } : {}) },
     }, [
-      ce('p', { key: 't', style: { fontFamily: "'Archivo', sans-serif", fontWeight: 500, fontSize: 'clamp(1.3rem,3.2vw,2.5rem)', lineHeight: 1.28, letterSpacing: '-.01em' } }, '\u201C' + q.text + '\u201D'),
+      ce('p', { key: 't', style: { fontFamily: "'Archivo', sans-serif", fontWeight: 500, fontSize: isMobile ? '1.2rem' : 'clamp(1.3rem,3.2vw,2.5rem)', lineHeight: 1.28, letterSpacing: '-.01em' } }, '\u201C' + q.text + '\u201D'),
       ce('p', { key: 'a', style: { marginTop: 'clamp(16px,2vw,26px)', fontFamily: "'Archivo Black', sans-serif", fontSize: 'clamp(1rem,1.8vw,1.4rem)', letterSpacing: '-.01em' } }, q.author),
     ]);
     return {
       currentQuote,
+      isMobile,
+      isDesktop: !isMobile,
+      universeAll,
+      uniMobileDots,
+      uniRowRef: this.uniRowRef,
+      onUniScroll: this.onUniScroll,
       contactUrl: this.props.contactUrl || 'https://wa.me/5546991398868?text=' + encodeURIComponent('Oi, Laura! Vi seu site e quero entender como funciona.'),
       instagramUrl: this.props.instagramUrl || 'https://instagram.com/psic.laaura',
       post1Url: this.props.post1Url || 'https://www.instagram.com/p/DZqeyFvDjsL/',
