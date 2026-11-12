@@ -1,511 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Laura Danieli — Psicóloga e Psicanalista | Atendimento Online para Mulheres</title>
-<meta name="description" content="Psicanálise online para mulheres que já cansaram de ser o que todo mundo esperava. Sem jargão, sem distância, com escuta real. CRP 08/47844.">
-<meta name="keywords" content="psicóloga online para mulheres, psicanálise online, psicóloga online Brasil, terapia para mulheres online, psicóloga para brasileiras no exterior, psicanálise para mulheres, psicóloga online Francisco Beltrão, atendimento psicológico online, terapia online mulheres">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laura Danieli | Psicóloga para mulheres em Francisco Beltrão e online</title>
+<meta name="description" content="Psicóloga de orientação psicanalítica para mulheres. Atendimento presencial em Francisco Beltrão (PR) e online no Brasil e no exterior. CRP 08/47844.">
 <link rel="canonical" href="https://psicologalauradanieli.com.br/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Laura Danieli — Psicóloga e Psicanalista">
-<meta property="og:description" content="Psicanálise online para mulheres. Escuta real, sem jargão. CRP 08/47844.">
+<meta property="og:title" content="Laura Danieli | Psicóloga para mulheres">
+<meta property="og:description" content="Psicóloga de orientação psicanalítica para mulheres. Presencial em Francisco Beltrão (PR) e online. CRP 08/47844.">
 <meta property="og:url" content="https://psicologalauradanieli.com.br/">
-<meta property="og:image" content="https://psicologalauradanieli.com.br/assets/laura-hero.png">
+<meta property="og:image" content="https://psicologalauradanieli.com.br/assets/laura-sobre.webp">
 <meta property="og:locale" content="pt_BR">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2b0b10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg1:#2b0b10;--bg2:#3a1017;--card:#4a1820;--chip:#4f1a23;--photo:#5a1d27;
+  --text:#ecdcd2;--head:#f8ece3;--btn:#ecdcc4;--btnfg:#631018;
+  --pad:clamp(22px,5vw,64px);
+  --font:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--bg1)}
+body{font-family:var(--font);background:var(--bg1);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:var(--head)}
+::selection{background:var(--btn);color:var(--btnfg)}
+:focus-visible{outline:2px solid var(--btn);outline-offset:3px;border-radius:6px}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1140px;margin:0 auto}
+.section{padding:clamp(72px,9vw,120px) var(--pad)}
+.bg1{background:var(--bg1)}.bg2{background:var(--bg2)}
+.h2{font-weight:700;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-.03em;color:var(--head);text-wrap:balance}
+.lead{font-size:clamp(1.02rem,1.4vw,1.2rem);line-height:1.75;color:var(--text);opacity:.86;text-wrap:pretty}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 30px;border-radius:100px;background:var(--btn);color:var(--btnfg);font-weight:600;font-size:1rem;text-decoration:none;text-align:center;transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(0,0,0,.6);color:var(--btnfg)}
+.btn:active{transform:scale(.98)}
+.wave{display:block;width:100%;height:clamp(36px,5vw,70px)}
+.wave-wrap{line-height:0}
 
-<script src="./support.js"></script>
+/* MENU */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s ease,box-shadow .3s ease}
+.nav.solid{background:rgba(43,11,16,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(236,220,210,.08)}
+.nav-in{max-width:1200px;margin:0 auto;height:72px;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:700;font-size:1.15rem;letter-spacing:-.01em;color:var(--head);text-decoration:none}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{color:var(--text);text-decoration:none;font-size:.95rem;font-weight:500;opacity:.85}
+.nav-links a:hover{opacity:1;color:var(--head)}
+.nav .btn,.nav-links a.btn{min-height:44px;padding:0 22px;font-size:.92rem;color:var(--btnfg);opacity:1}
+@media (max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;min-height:max(660px,100svh);background:var(--bg1);display:flex;flex-direction:column}
+.hero-bg{position:absolute;left:0;right:0;top:calc(96px + env(safe-area-inset-top,0px));text-align:center;font-weight:700;letter-spacing:-.035em;line-height:1;color:#4a1820;font-size:min(calc((100vw - 2 * var(--pad)) / 5.75),30vh);padding:0 var(--pad);white-space:nowrap;user-select:none;pointer-events:none}
+.hero-bg span{display:block}
+.hero-photo{position:absolute;bottom:0;left:50%;transform:translateX(8%);height:min(82%,840px);width:auto;max-width:none;z-index:2}
+.hero-copy{position:relative;z-index:3;margin-top:auto;padding:0 var(--pad) clamp(40px,6vw,72px);max-width:1200px;width:100%;margin-left:auto;margin-right:auto}
+.hero-eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--btn)}
+.hero-copy h1{max-width:20ch;font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1.25;font-weight:500;color:var(--head);text-wrap:balance}
+.hero-copy h1 b{font-weight:700}
+.hero-copy .sub{max-width:40ch;margin-top:16px;font-size:clamp(1rem,1.3vw,1.1rem);line-height:1.65;color:var(--text);opacity:.85;text-wrap:pretty}
+.hero-copy .btn{margin-top:28px}
+@media (max-width:760px){
+  .hero{min-height:max(720px,100svh)}
+  .hero-bg{top:calc(88px + env(safe-area-inset-top,0px));font-size:calc((100vw - 2 * var(--pad)) / 5.75);line-height:1.02}
+  .hero-photo{left:auto;right:-10%;bottom:auto;top:calc(190px + env(safe-area-inset-top,0px));transform:none;height:auto;width:82%}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:54%;background:linear-gradient(180deg,rgba(43,11,16,0) 0%,rgba(43,11,16,.92) 30%,var(--bg1) 46%);z-index:2}
+  .hero-copy .btn{width:100%}
+}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes risex{from{opacity:0;transform:translate(8%,22px)}to{opacity:1;transform:translateX(8%)}}
+.hero-bg{animation:rise 1s cubic-bezier(.2,.75,.2,1) both}
+.hero-copy{animation:rise .9s cubic-bezier(.2,.75,.2,1) .35s both}
+.hero-photo{animation:risex 1.1s cubic-bezier(.2,.75,.2,1) .15s both}
+@media (max-width:760px){.hero-photo{animation-name:rise}}
+
+/* ESPAÇO SEGURO */
+.safe{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(36px,5vw,72px);align-items:start}
+.safe .lead{margin-top:22px}
+.quote{background:var(--card);border-radius:28px;padding:clamp(28px,3.4vw,44px)}
+.quote p{font-size:clamp(1.15rem,1.8vw,1.45rem);line-height:1.45;font-weight:500;color:var(--head);text-wrap:pretty}
+.quote-mark{font-size:4rem;line-height:.6;font-weight:700;color:var(--btn);opacity:.6;display:block;margin-bottom:14px}
+
+/* PROCESSO */
+.center{text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px;margin-top:clamp(36px,4vw,52px)}
+.card{background:var(--card);border-radius:28px;padding:clamp(24px,2.6vw,32px)}
+.card .num{width:46px;height:46px;border-radius:50%;background:var(--chip);color:var(--head);display:flex;align-items:center;justify-content:center;font-weight:700}
+.card h3{font-size:1.25rem;font-weight:700;color:var(--head);margin-top:20px}
+.card p{font-size:1rem;line-height:1.65;margin-top:10px;opacity:.86;text-wrap:pretty}
+.card.hl{background:var(--btn);color:var(--btnfg)}
+.card.hl .num{background:var(--btnfg);color:var(--btn)}
+.card.hl h3{color:var(--btnfg)}
+.card.hl p{opacity:1}
+.cta-row{display:flex;justify-content:center;margin-top:clamp(36px,4vw,48px)}
+
+/* SOBRE */
+.about{display:grid;grid-template-columns:1fr 1fr;min-height:min(820px,100svh)}
+.about-photo{background:var(--photo);overflow:hidden}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.about-copy{padding:clamp(56px,7vw,100px) var(--pad);display:flex;flex-direction:column;justify-content:center;max-width:640px}
+.about-copy .lead{margin-top:22px;display:flex;flex-direction:column;gap:1em}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{padding:10px 18px;border-radius:100px;background:var(--chip);font-size:.88rem;font-weight:600;color:var(--head)}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about-photo{aspect-ratio:4/4.6}}
+
+/* CULTURA POP */
+.pop-head{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(24px,4vw,64px);align-items:end}
+.tabs-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-top:clamp(36px,4vw,48px)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{min-height:44px;padding:0 22px;border:none;border-radius:100px;background:var(--chip);color:var(--text);font-weight:600;font-size:.95rem;transition:background .3s ease,color .3s ease}
+.tab[aria-selected="true"]{background:var(--btn);color:var(--btnfg)}
+.arrows{display:flex;gap:8px}
+.arrow{width:48px;height:48px;border-radius:50%;border:1px solid rgba(236,220,210,.25);background:none;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:background .2s ease}
+.arrow:hover{background:var(--chip)}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;margin:28px calc(var(--pad) * -1) 0;padding:0 var(--pad) 8px;scroll-padding:0 var(--pad);scrollbar-width:none;transition:opacity .3s ease}
+.track::-webkit-scrollbar{display:none}
+.item{flex:0 0 clamp(210px,22vw,250px);scroll-snap-align:start;background:var(--card);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.item .cover{position:relative;aspect-ratio:2/3;overflow:hidden;background:var(--photo)}
+.item .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item .info{padding:18px 18px 20px}
+.item h3{font-size:1.08rem;font-weight:700;line-height:1.2;color:var(--head);text-wrap:balance}
+.item .meta{font-size:.8rem;font-weight:600;opacity:.65;margin-top:6px}
+.item p{font-size:.92rem;line-height:1.5;opacity:.85;margin-top:8px}
+@media (max-width:640px){.item{flex-basis:62%}.arrows{display:none}}
+
+/* PRESENCIAL OU ONLINE */
+.modes{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:stretch;margin-top:clamp(36px,4vw,52px)}
+.mode{background:var(--card);border-radius:28px;overflow:hidden;display:flex;flex-direction:column}
+.mode-media{position:relative;aspect-ratio:16/11;background:var(--photo)}
+.mode-media .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.mode-media .slide.on{opacity:1}
+.dots{position:absolute;bottom:12px;left:0;right:0;display:flex;justify-content:center;gap:2px;z-index:2}
+.dot{width:28px;height:28px;border:none;background:none;display:flex;align-items:center;justify-content:center}
+.dot span{display:block;width:8px;height:8px;border-radius:8px;background:#fff;opacity:.5;transition:width .4s ease,opacity .4s ease}
+.dot[aria-current="true"] span{width:22px;opacity:1}
+.mode-media.illu{display:flex;align-items:center;justify-content:center;background:var(--chip);padding:clamp(24px,4vw,44px)}
+.mode-media.illu img{width:100%;max-width:380px;height:auto}
+.mode-body{padding:clamp(24px,3vw,34px);display:flex;flex-direction:column;flex:1}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--btn)}
+.mode h3{font-size:clamp(1.4rem,2.2vw,1.8rem);font-weight:700;color:var(--head);margin-top:8px;letter-spacing:-.02em}
+.mode p{margin-top:12px;line-height:1.65;opacity:.86}
+.addr{margin-top:18px;font-weight:600;color:var(--head);line-height:1.55}
+.map{display:inline-flex;align-items:center;min-height:44px;margin-top:10px;font-size:.85rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--btn);text-decoration:none;border-bottom:1.5px solid rgba(236,220,196,.4);align-self:flex-start}
+.map:hover{border-bottom-color:var(--btn);color:var(--btn)}
+.list{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:10px}
+.list li{display:flex;gap:12px;align-items:baseline;line-height:1.5}
+.list li::before{content:"";flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--btn);transform:translateY(-2px)}
+.or{align-self:center;width:64px;height:64px;border-radius:50%;background:var(--btn);color:var(--btnfg);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.05rem}
+@media (max-width:860px){.modes{grid-template-columns:1fr}.or{justify-self:center;margin:-6px 0}}
+
+/* DÚVIDAS */
+.faq{max-width:860px;margin:0 auto}
+.faq .lead{margin-top:16px}
+.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:clamp(32px,4vw,48px)}
+.faq-item{background:var(--card);border-radius:24px}
+.faq-q{width:100%;background:none;border:none;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:clamp(18px,2.2vw,24px) clamp(20px,2.6vw,28px);font-weight:700;font-size:clamp(1.02rem,1.6vw,1.18rem);line-height:1.3;color:var(--head)}
+.faq-ico{position:relative;flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--chip);transition:transform .4s cubic-bezier(.4,0,.2,1),background .3s ease}
+.faq-ico::before,.faq-ico::after{content:"";position:absolute;left:50%;top:50%;background:var(--head);border-radius:2px;transition:background .3s ease}
+.faq-ico::before{width:13px;height:2px;margin:-1px 0 0 -6.5px}
+.faq-ico::after{width:2px;height:13px;margin:-6.5px 0 0 -1px}
+.faq-item.open .faq-ico{transform:rotate(45deg);background:var(--btn)}
+.faq-item.open .faq-ico::before,.faq-item.open .faq-ico::after{background:var(--btnfg)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.4,0,.2,1)}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a>div{overflow:hidden;min-height:0}
+.faq-a p{padding:0 clamp(20px,2.6vw,28px) clamp(20px,2.6vw,26px);line-height:1.7;opacity:.86;max-width:64ch;text-wrap:pretty}
+
+/* CONVITE */
+.invite{text-align:center}
+.invite .h2{max-width:17ch;margin:0 auto}
+.invite .lead{max-width:46ch;margin:22px auto 0}
+.invite .btn{margin-top:34px}
+
+/* RODAPÉ */
+.footer{background:var(--bg1);border-top:1px solid rgba(236,220,210,.12);padding:clamp(48px,6vw,72px) var(--pad) 32px}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:36px}
+.foot-name{font-weight:700;font-size:1.5rem;color:var(--head);letter-spacing:-.02em}
+.foot-label{font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--btn);margin-bottom:12px}
+.footer p{line-height:1.65;opacity:.85}
+.footer a{display:inline-flex;align-items:center;min-height:36px;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.copy{margin-top:48px;padding-top:22px;border-top:1px solid rgba(236,220,210,.1);font-size:.85rem;opacity:.65}
+
+/* BOTÃO FIXO CELULAR */
+.sticky{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;transform:translateY(140%);transition:transform .35s cubic-bezier(.2,.75,.2,1);display:none}
+.sticky .btn{width:100%;box-shadow:0 14px 34px -10px rgba(0,0,0,.7)}
+.sticky.show{transform:none}
+@media (max-width:760px){.sticky{display:block}}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Archivo:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#e9dfc7;color:#631018;-webkit-tap-highlight-color:transparent}
-::selection{background:#631018;color:#e9dfc7}
-a{color:#631018}
-a:hover{color:#43090f}
-:focus-visible{outline:2px solid #631018;outline-offset:3px}
-[data-noscrollbar]::-webkit-scrollbar{display:none}
-@keyframes ldrise{from{transform:translateY(28px)}to{transform:translateY(0)}}
-@keyframes ldfloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(12deg)}}
-@keyframes ldfloat2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(16px) rotate(-9deg)}}
-@keyframes ldspin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-@keyframes ldshimmer{0%,100%{text-shadow:5px 5px 0 #43090f}50%{text-shadow:7px 7px 0 #9a1c26}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style>
-</helmet>
-<div style="width:100%;overflow-x:clip;font-family:'Archivo',sans-serif;color:#631018;background-color:#e9dfc7;background-image:repeating-linear-gradient(90deg,rgba(120,96,58,0.18) 0px,rgba(120,96,58,0.04) 4px,rgba(255,255,255,0.34) 7px,rgba(120,96,58,0.04) 10px,rgba(120,96,58,0.18) 13px)">
 
-<sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-<section data-screen-label="Início" style="position:relative;overflow:hidden;background:#631018;color:#e9dfc7;min-height:100svh;display:flex;flex-direction:column;padding:clamp(22px,4vw,40px) clamp(22px,6vw,80px) clamp(56px,8vw,110px)">
-  <div style="position:absolute;inset:0;z-index:0"><img src="assets/laura-hero.png" alt="Foto da Laura" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:78% 30%"></div>
-  <div aria-hidden="true" style="position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(67,9,15,.96) 0%,rgba(99,16,24,.88) 34%,rgba(99,16,24,.5) 58%,rgba(99,16,24,.12) 100%),linear-gradient(0deg,rgba(50,7,11,.75) 0%,rgba(50,7,11,0) 32%)"></div>
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:14%;right:3%;width:clamp(62px,8vw,112px);height:auto;opacity:.7;pointer-events:none;transform-origin:center;animation:ldspin 44s linear infinite;z-index:1"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="2.4" stroke-linejoin="round"></polygon></svg>
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:4%;left:5%;width:clamp(58px,8vw,116px);height:auto;opacity:.8;pointer-events:none;transform-origin:center;animation:ldfloat 8s ease-in-out infinite;z-index:1"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#e9dfc7"></polygon></svg>
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:-3%;right:-2%;width:clamp(54px,7vw,100px);height:auto;opacity:.42;pointer-events:none;transform-origin:center;animation:ldfloat2 11s ease-in-out infinite;z-index:1"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="2.4" stroke-linejoin="round"></polygon></svg>
-  <div style="position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:clamp(11px,1.1vw,13px);font-weight:600;letter-spacing:.3em;text-transform:uppercase;opacity:.88"><span>Psicóloga de mulheres</span><span style="text-align:right">Laura Danieli</span></div>
-  <div style="position:relative;z-index:2;flex:1;display:flex;flex-wrap:wrap;align-items:center;max-width:1180px;width:100%;margin:0 auto;padding:clamp(40px,8vw,80px) 0">
-    <div style="flex:1 1 460px;min-width:0">
-      <h1 style="margin:0;line-height:1.12">
-        <span style="display:block;font-weight:400;font-size:clamp(1.15rem,2.9vw,2rem);letter-spacing:-.005em;line-height:1.28;opacity:.9;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) both">Entender sua história não é<br>olhar para o passado.</span>
-        <span style="display:block;font-family:'Archivo Black',sans-serif;font-size:clamp(2.5rem,6.6vw,5.1rem);letter-spacing:-.03em;line-height:.96;margin-top:.3em;text-shadow:4px 4px 0 #43090f;animation:ldrise 1s cubic-bezier(.2,.75,.2,1) .18s both,ldshimmer 4.5s ease-in-out 1.4s infinite">É parar de<br>repeti-lo.</span>
-      </h1>
-      <p style="font-size:clamp(.98rem,1.25vw,1.12rem);line-height:1.72;max-width:46ch;margin-top:clamp(30px,4.5vw,46px);opacity:.9;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) .4s both">Atendimento psicológico para mulheres. Um lugar de escuta dedicado a acolher sua história, suas dúvidas e suas transições, dando clareza para você assumir suas próprias escolhas.</p>
-      <div style="margin-top:clamp(34px,5vw,52px);animation:ldrise .9s cubic-bezier(.2,.75,.2,1) .58s both"><a href="{{ contactUrl }}" style="display:inline-flex;align-items:center;gap:12px;background:#e9dfc7;color:#631018;font-weight:600;font-size:clamp(.94rem,1.1vw,1rem);letter-spacing:.02em;text-decoration:none;padding:16px 30px;border-radius:100px;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:0 14px 30px -10px rgba(0,0,0,.55);color:#631018">Quero entender como funciona →</a></div>
-    </div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#inicio">Laura Danieli</a>
+    <nav class="nav-links" aria-label="Menu">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#onde-atendo">Onde atendo</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn" href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">Agendar</a>
+    </nav>
   </div>
-</section>
-</sc-if>
+</header>
 
-<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-<section data-screen-label="Início (celular)" style="position:relative;overflow:hidden;background:#631018;color:#e9dfc7;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 22px 44px">
-  <img src="assets/laura-hero.png" alt="Foto da Laura" fetchpriority="high" style="position:absolute;left:0;top:-16%;width:100%;height:100%;object-fit:cover;object-position:71% 30%">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(50,7,11,.6) 0%,rgba(50,7,11,0) 16%,rgba(99,16,24,0) 34%,rgba(99,16,24,.84) 56%,rgba(67,9,15,.97) 76%,#43090f 100%)"></div>
-  <div style="position:absolute;top:20px;left:22px;right:22px;display:flex;justify-content:space-between;gap:12px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;opacity:.92"><span>Psicóloga de mulheres</span><span>Laura Danieli</span></div>
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:15%;right:5%;width:44px;height:auto;opacity:.7;pointer-events:none;animation:ldspin 44s linear infinite"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#e9dfc7" stroke-width="3" stroke-linejoin="round"></polygon></svg>
-  <div style="position:relative;z-index:2">
-    <h1 style="margin:0;line-height:1.12">
-      <span style="display:block;font-weight:400;font-size:1.1rem;line-height:1.32;opacity:.92;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) both">Entender sua história não é<br>olhar para o passado.</span>
-      <span style="display:block;font-family:'Archivo Black',sans-serif;font-size:2.7rem;letter-spacing:-.03em;line-height:.96;margin-top:.28em;text-shadow:3px 3px 0 #43090f;animation:ldrise 1s cubic-bezier(.2,.75,.2,1) .18s both">É parar de<br>repeti-lo.</span>
-    </h1>
-    <p style="font-size:.98rem;line-height:1.6;margin-top:18px;opacity:.9;text-wrap:pretty;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) .4s both">Atendimento psicológico para mulheres. Um lugar de escuta dedicado a acolher sua história, suas dúvidas e suas transições, dando clareza para você assumir suas próprias escolhas.</p>
-    <a href="{{ contactUrl }}" style="margin-top:24px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:16px 22px;background:#e9dfc7;color:#631018;font-weight:600;font-size:1rem;letter-spacing:.02em;text-align:center;text-decoration:none;border-radius:100px;animation:ldrise .9s cubic-bezier(.2,.75,.2,1) .58s both" style-active="transform:scale(.98)">Quero entender como funciona →</a>
-  </div>
-</section>
-</sc-if>
+<main>
 
-<section aria-label="Frases" data-screen-label="Frases" style="padding:clamp(48px,7vw,96px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1080px;margin:0 auto;border-top:1.5px solid #631018;padding:clamp(52px,6.5vw,84px) 0 0;position:relative;display:flex;flex-direction:column;align-items:center;text-align:center">
-    <span aria-hidden="true" style="position:absolute;top:14px;left:0;font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;opacity:.28">“</span>
-    <div style="display:grid;width:100%;max-width:980px">
-      <sc-for list="{{ quotes }}" as="q" hint-placeholder-count="1">
-        <figure aria-hidden="{{ q.hidden }}" style="grid-area:1 / 1;align-self:center;opacity:{{ q.op }};transform:{{ q.tf }};transition:opacity .9s ease,transform .9s cubic-bezier(.2,.75,.2,1);pointer-events:none">
-          <blockquote style="font-weight:500;font-size:clamp(1.2rem,3vw,2.4rem);line-height:1.28;letter-spacing:-.01em;text-wrap:balance">{{ q.text }}</blockquote>
-          <figcaption style="margin-top:clamp(16px,2vw,26px);font-family:'Archivo Black',sans-serif;font-size:clamp(1rem,1.8vw,1.4rem);letter-spacing:-.01em">{{ q.author }}</figcaption>
-        </figure>
-      </sc-for>
-    </div>
-    <div style="display:flex;gap:2px;margin-top:clamp(26px,3.4vw,42px)">
-      <sc-for list="{{ quoteDots }}" as="d" hint-placeholder-count="6">
-        <button aria-label="{{ d.label }}" onClick="{{ d.onClick }}" style="height:28px;padding:0 4px;display:flex;align-items:center;background:none;border:none;cursor:pointer"><span style="display:block;height:7px;width:{{ d.w }};border-radius:7px;background:#631018;opacity:{{ d.op }};transition:width .5s cubic-bezier(.77,0,.18,1),opacity .5s ease"></span></button>
-      </sc-for>
-    </div>
+<!-- 1. HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"><span>psicóloga</span><span>de mulheres</span></div>
+  <img class="hero-photo" src="assets/laura-hero-alpha.webp" alt="Laura Danieli, psicóloga" fetchpriority="high" width="587" height="854">
+  <div class="hero-copy">
+    <h1>Entender sua história não é olhar para o passado. <b>É parar de repeti-lo.</b></h1>
+    <a class="btn" href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">Quero agendar minha primeira conversa →</a>
   </div>
 </section>
 
-<section data-screen-label="01 Para você" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:clamp(12px,1.6vw,24px);right:clamp(20px,4vw,64px);width:clamp(34px,5.4vw,76px);height:auto;opacity:.9;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="3" stroke-linejoin="round"></polygon></svg>
-  <div style="max-width:1080px;margin:0 auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:14px 0;border-top:1.5px solid #631018;border-bottom:1px solid rgba(99,16,24,.3);margin-bottom:clamp(36px,5vw,64px)"><span style="display:flex;gap:16px"><span>01</span><span>Para você</span></span><svg viewBox="0 0 100 100" aria-hidden="true" style="width:14px;height:14px;flex-shrink:0"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg></div>
-    <div style="display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,80px);align-items:start">
-      <h2 style="flex:1 1 360px;min-width:0;font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,5vw,4.2rem);line-height:.96;letter-spacing:-.02em;text-wrap:balance">Este é um espaço seguro para ser quem você é.</h2>
-      <div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:clamp(18px,2.4vw,26px);font-size:clamp(1.05rem,1.4vw,1.22rem);line-height:1.65;font-weight:500;text-wrap:pretty">
-        <p>Freud dizia que tudo aquilo que a gente não consegue falar acaba encontrando outro caminho para sair, e quase sempre de uma forma mais difícil.</p>
-        <p>A vida adulta cobra muito. Cobra conta, cobra presença, cobra clareza sobre quem você é e o que você quer. E no meio de tudo isso, tem coisas que ficam presas: nos relacionamentos que se repetem, nas escolhas que travam, no cansaço que não tem nome.</p>
-        <p style="font-weight:800;font-size:clamp(1.25rem,1.9vw,1.6rem);line-height:1.3;margin-top:clamp(8px,1.5vw,16px)">Esse desconforto, mesmo que ainda difícil de explicar, já é sinal suficiente de que há algo na sua trajetória pedindo para ser escutado.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="wave-wrap bg1" aria-hidden="true"><svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,35 L1440,70 L0,70 Z" fill="#3a1017"/></svg></div>
 
-<section data-screen-label="02 Sobre a Laura" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1080px;margin:0 auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:14px 0;border-top:1.5px solid #631018;border-bottom:1px solid rgba(99,16,24,.3);margin-bottom:clamp(36px,5vw,64px)"><span style="display:flex;gap:16px"><span>02</span><span>Sobre a Laura</span></span><svg viewBox="0 0 100 100" aria-hidden="true" style="width:14px;height:14px;flex-shrink:0"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(34px,5vw,64px);align-items:start">
-      <div>
-        <div style="aspect-ratio:4/5;width:100%;border-radius:6px;border:1.5px solid rgba(99,16,24,.45);overflow:hidden;background:rgba(99,16,24,.08)">
-          <img src="assets/laura.jpeg" alt="Foto da Laura" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%;transform:scale(1.32);transform-origin:50% 28%;display:block">
-        </div>
-        <div style="margin-top:18px;font-size:13px;font-weight:600;letter-spacing:.02em;display:flex;flex-direction:column">
-          <div style="padding:9px 0;border-bottom:1px solid rgba(99,16,24,.25)">Psicologia · UNIPAR</div>
-          <div style="padding:9px 0;border-bottom:1px solid rgba(99,16,24,.25)">CRP 08/47844 · Orientação psicanalítica</div>
-          <div style="padding:9px 0">Atendimento online para mulheres</div>
-        </div>
-      </div>
-      <div>
-        <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,6vw,4.6rem);line-height:.95;letter-spacing:-.02em">Prazer, eu sou a Laura.</h2>
-        <div style="margin-top:clamp(24px,3vw,36px);font-size:clamp(1.02rem,1.5vw,1.22rem);line-height:1.65;font-weight:500;display:flex;flex-direction:column;gap:1.1em;text-wrap:pretty">
-          <p>Psicóloga e psicanalista. Escolhi a clínica porque acredito na potência transformadora que existe quando uma mulher decide dar nome às suas próprias vivências.</p>
-          <p>O trabalho que construo apoia-se em um compromisso central: <b style="font-weight:800">uma escuta humana, ética e verdadeiramente presente.</b></p>
-          <p>Não acredito em teorias que se distanciam das pessoas ou em análises frias. O espaço que ofereço é construído a duas mãos, pautado pelo estudo rigoroso de cada caso, pelo afeto e pelo reconhecimento de que falar sobre si exige coragem. Aqui, sua história é acolhida em toda a sua singularidade.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-screen-label="03 O processo" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1080px;margin:0 auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:14px 0;border-top:1.5px solid #631018;border-bottom:1px solid rgba(99,16,24,.3);margin-bottom:clamp(36px,5vw,64px)"><span style="display:flex;gap:16px"><span>03</span><span>O processo</span></span><svg viewBox="0 0 100 100" aria-hidden="true" style="width:14px;height:14px;flex-shrink:0"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg></div>
-    <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,6.5vw,5rem);line-height:.95;letter-spacing:-.02em">Como é o processo</h2>
-    <div style="margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,3.5vw,48px) clamp(40px,5vw,72px)">
-      <div style="border-top:2.5px solid #631018;padding-top:20px">
-        <div style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,3vw,2.6rem);line-height:1">01</span><h3 style="font-weight:800;font-size:clamp(1.15rem,1.8vw,1.4rem)">Para quem é</h3></div>
-        <p style="margin-top:14px;font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.6;font-weight:500;text-wrap:pretty">Para mulheres que vivem momentos de transição, lidam com a sobrecarga de dar conta de tudo e buscam um lugar de escuta para entender suas próprias escolhas, sem precisar ter todas as respostas prontas.</p>
-      </div>
-      <div style="border-top:2.5px solid #631018;padding-top:20px">
-        <div style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,3vw,2.6rem);line-height:1">02</span><h3 style="font-weight:800;font-size:clamp(1.15rem,1.8vw,1.4rem)">O que é a análise</h3></div>
-        <p style="margin-top:14px;font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.6;font-weight:500;text-wrap:pretty">Um processo contínuo de autoconhecimento e escuta de si. A psicanálise não busca se encaixar em fórmulas ou regras prontas; ela abre espaço para você olhar para o que sente com mais liberdade, encontrando novos caminhos para a sua história no seu próprio tempo.</p>
-      </div>
-      <div style="border-top:2.5px solid #631018;padding-top:20px">
-        <div style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,3vw,2.6rem);line-height:1">03</span><h3 style="font-weight:800;font-size:clamp(1.15rem,1.8vw,1.4rem)">As sessões</h3></div>
-        <p style="margin-top:14px;font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.6;font-weight:500;text-wrap:pretty">Encontros semanais, individuais e online, com duração de 50 minutos. É o seu momento na semana: sem roteiros rígidos ou temas obrigatórios. Você traz o que apareceu no dia, o que ficou travado ou o que sentir vontade de conversar.</p>
-      </div>
-      <div style="border-top:2.5px solid #631018;padding-top:20px">
-        <div style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,3vw,2.6rem);line-height:1">04</span><h3 style="font-weight:800;font-size:clamp(1.15rem,1.8vw,1.4rem)">O primeiro encontro</h3></div>
-        <p style="margin-top:14px;font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.6;font-weight:500;text-wrap:pretty">Nossa primeira sessão é um ponto de partida para nos conhecermos. Você não precisa chegar com tudo organizado. Aos poucos, juntas, vamos entendendo o que faz sentido olhar e acolher primeiro.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-screen-label="04 Universo cultural" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1080px;margin:0 auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:14px 0;border-top:1.5px solid #631018;border-bottom:1px solid rgba(99,16,24,.3);margin-bottom:clamp(36px,5vw,64px)"><span style="display:flex;gap:16px"><span>04</span><span>Universo cultural</span></span><svg viewBox="0 0 100 100" aria-hidden="true" style="width:14px;height:14px;flex-shrink:0"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg></div>
-    <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,6vw,4.6rem);line-height:.95;letter-spacing:-.02em;text-wrap:balance">Coisas que atravessam o meu universo</h2>
-    <p style="margin-top:18px;font-size:clamp(1.05rem,1.7vw,1.35rem);font-weight:500;opacity:.9">Cultura pop também fala sobre quem somos.</p>
-
-    <div role="tablist" aria-label="Categorias" style="position:relative;display:flex;flex-wrap:wrap;gap:clamp(22px,3vw,40px);margin-top:clamp(34px,4vw,52px);border-bottom:1.5px solid rgba(99,16,24,.3)">
-      <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="3">
-        <button ref="{{ tab.ref }}" role="tab" aria-selected="{{ tab.sel }}" onClick="{{ tab.onClick }}" style="background:none;border:none;cursor:pointer;color:#631018;font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(1.1rem,2vw,1.5rem);letter-spacing:-.01em;padding:0 0 14px;opacity:{{ tab.op }};transition:opacity .4s ease">{{ tab.label }}</button>
-      </sc-for>
-      <span aria-hidden="true" style="position:absolute;left:0;bottom:-1.5px;height:4px;border-radius:3px;background:#631018;width:{{ indW }};transform:{{ indX }};transition:transform .6s cubic-bezier(.77,0,.18,1),width .6s cubic-bezier(.77,0,.18,1)"></span>
-    </div>
-
-    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-      <div onPointerDown="{{ onTrackDown }}" onPointerUp="{{ onTrackUp }}" onMouseEnter="{{ hoverOn }}" onMouseLeave="{{ hoverOff }}" style="margin-top:clamp(34px,4vw,52px);overflow:hidden;touch-action:pan-y;user-select:none">
-        <div style="display:flex;gap:28px;transform:{{ uniTrackX }};opacity:{{ uniOp }};transition:{{ uniTrans }}">
-          <sc-for list="{{ uniPages }}" as="pg" hint-placeholder-count="1">
-            <div aria-hidden="{{ pg.hidden }}" style="flex:0 0 100%;min-width:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.5vw,28px)">
-              <sc-for list="{{ pg.items }}" as="item" hint-placeholder-count="3">
-                <div style="border:1.5px solid rgba(99,16,24,.35);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:rgba(99,16,24,.03)">
-                  <div style="width:100%;aspect-ratio:2/3;background:rgba(99,16,24,.08)"><img src="{{ item.cover }}" alt="{{ item.title }}" loading="lazy" draggable="false" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-                  <div style="padding:clamp(16px,2vw,22px);display:flex;flex-direction:column;gap:9px">
-                    <h3 style="font-family:'Archivo Black',sans-serif;font-size:clamp(1.2rem,2vw,1.55rem);line-height:1.02;letter-spacing:-.02em;text-wrap:balance">{{ item.title }}</h3>
-                    <sc-if value="{{ item.hasMeta }}" hint-placeholder-val="{{ true }}"><div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.7">{{ item.meta }}</div></sc-if>
-                    <p style="font-size:clamp(.96rem,1.3vw,1.05rem);line-height:1.55;font-weight:500;opacity:.92;text-wrap:pretty">{{ item.desc }}</p>
-                  </div>
-                </div>
-              </sc-for>
-            </div>
-          </sc-for>
-        </div>
-      </div>
-      <div style="display:flex;gap:2px;justify-content:center;margin-top:clamp(26px,3vw,38px)">
-        <sc-for list="{{ uniDots }}" as="dot" hint-placeholder-count="2">
-          <button aria-label="{{ dot.label }}" onClick="{{ dot.onClick }}" style="height:28px;padding:0 4px;display:flex;align-items:center;background:none;border:none;cursor:pointer"><span style="display:block;height:9px;width:{{ dot.w }};border-radius:9px;background:#631018;opacity:{{ dot.op }};transition:width .5s cubic-bezier(.77,0,.18,1),opacity .5s ease"></span></button>
-        </sc-for>
-      </div>
-    </sc-if>
-
-    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-      <div ref="{{ uniRowRef }}" onScroll="{{ onUniScroll }}" data-noscrollbar="" style="margin:28px calc(clamp(22px,6vw,80px) * -1) 0;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 clamp(22px,6vw,80px);padding:0 clamp(22px,6vw,80px) 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;opacity:{{ uniOp }};transform:{{ uniRowY }};transition:opacity .35s ease,transform .6s cubic-bezier(.2,.75,.2,1)">
-        <sc-for list="{{ universeAll }}" as="item" hint-placeholder-count="3">
-          <div style="flex:0 0 44%;scroll-snap-align:start;border:1.5px solid rgba(99,16,24,.35);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:rgba(99,16,24,.03)">
-            <div style="width:100%;aspect-ratio:2/3;background:rgba(99,16,24,.08)"><img src="{{ item.cover }}" alt="{{ item.title }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-            <div style="padding:12px 12px 14px;display:flex;flex-direction:column;gap:6px">
-              <h3 style="font-family:'Archivo Black',sans-serif;font-size:1rem;line-height:1.08;letter-spacing:-.015em;text-wrap:balance">{{ item.title }}</h3>
-              <sc-if value="{{ item.hasMeta }}" hint-placeholder-val="{{ true }}"><div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.7">{{ item.meta }}</div></sc-if>
-              <p style="font-size:.84rem;line-height:1.45;font-weight:500;opacity:.92">{{ item.desc }}</p>
-            </div>
-          </div>
-        </sc-for>
-      </div>
-      <div style="display:flex;gap:0;justify-content:center;margin-top:18px">
-        <sc-for list="{{ uniMobileDots }}" as="dot" hint-placeholder-count="5">
-          <button aria-label="{{ dot.label }}" onClick="{{ dot.onClick }}" style="height:28px;padding:0 4px;display:flex;align-items:center;background:none;border:none;cursor:pointer"><span style="display:block;height:7px;width:{{ dot.w }};border-radius:7px;background:#631018;opacity:{{ dot.op }};transition:width .45s cubic-bezier(.77,0,.18,1),opacity .45s ease"></span></button>
-        </sc-for>
-      </div>
-    </sc-if>
-  </div>
-</section>
-
-<section data-screen-label="05 O nosso espaço" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1080px;margin:0 auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:14px 0;border-top:1.5px solid #631018;border-bottom:1px solid rgba(99,16,24,.3);margin-bottom:clamp(36px,5vw,64px)"><span style="display:flex;gap:16px"><span>05</span><span>Atendimento presencial</span></span><svg viewBox="0 0 100 100" aria-hidden="true" style="width:14px;height:14px;flex-shrink:0"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg></div>
-    <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,5.5vw,4.6rem);line-height:.96;letter-spacing:-.02em">O nosso espaço</h2>
-    <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);margin-top:clamp(28px,3.5vw,44px)">
-      <p style="flex:1 1 320px;min-width:0;font-size:clamp(1rem,1.35vw,1.14rem);line-height:1.75;max-width:52ch;text-wrap:pretty">Os atendimentos presenciais acontecem na Diálogos, um ambiente estruturado para garantir o acolhimento e a privacidade que o seu processo exige. A clínica oferece um espaço reservado e tranquilo, preparado em cada detalhe para que você possa desacelerar e olhar para a sua história com calma.</p>
-      <div style="flex:1 1 240px;min-width:0;border-left:1.5px solid rgba(99,16,24,.35);padding-left:clamp(18px,2.4vw,28px)">
-        <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:10px">Endereço</div>
-        <p style="font-size:clamp(1rem,1.3vw,1.1rem);line-height:1.6;font-weight:500">Rua Giocondo Felipe, 576<br>Bairro Vila Nova<br>Francisco Beltrão · PR</p>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Giocondo+Felipe%2C+576%2C+Vila+Nova%2C+Francisco+Beltr%C3%A3o+-+PR" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:6px 0 2px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#631018;border-bottom:1.5px solid rgba(99,16,24,.45)" style-hover="border-bottom-color:#631018">Ver no mapa →</a>
-      </div>
-    </div>
-    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,clamp(150px,17vw,230px));gap:clamp(10px,1.4vw,16px);margin-top:clamp(36px,4.5vw,56px)">
-        <div style="grid-column:1 / span 2;grid-row:1 / span 2;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-4.png" alt="Fachada da clínica Diálogos" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="grid-column:3 / span 2;grid-row:1;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-1.png" alt="Recepção" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="grid-column:3;grid-row:2;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-2.png" alt="Sala de atendimento" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="grid-column:4;grid-row:2;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-3.png" alt="Detalhe da sala" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-      </div>
-    </sc-if>
-    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:36px">
-        <div style="grid-column:span 2;aspect-ratio:4/3;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-4.png" alt="Fachada da clínica Diálogos" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="grid-column:span 2;aspect-ratio:16/11;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-1.png" alt="Recepção" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="aspect-ratio:1;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-2.png" alt="Sala de atendimento" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="aspect-ratio:1;overflow:hidden;border-radius:8px;border:1.5px solid rgba(99,16,24,.35)"><img src="assets/espaco-3.png" alt="Detalhe da sala" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-      </div>
-    </sc-if>
-  </div>
-</section>
-
-<section data-screen-label="06 Dúvidas" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1080px;margin:0 auto">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:14px 0;border-top:1.5px solid #631018;border-bottom:1px solid rgba(99,16,24,.3);margin-bottom:clamp(36px,5vw,64px)"><span style="display:flex;gap:16px"><span>06</span><span>Dúvidas</span></span><svg viewBox="0 0 100 100" aria-hidden="true" style="width:14px;height:14px;flex-shrink:0"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg></div>
-    <div style="max-width:880px">
-      <h2 style="font-family:'Archivo Black',sans-serif;font-size:clamp(2.2rem,6vw,4.4rem);line-height:.95;letter-spacing:-.02em;text-wrap:balance;margin-bottom:clamp(34px,4vw,52px)">Dúvidas que costumam surgir por aqui</h2>
-      <div style="display:flex;flex-direction:column;border-bottom:1.5px solid rgba(99,16,24,.3)">
-        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
-          <div style="border-top:1.5px solid rgba(99,16,24,.3)">
-            <button aria-expanded="{{ f.open }}" onClick="{{ f.onClick }}" style="width:100%;background:none;border:none;cursor:pointer;color:#631018;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:clamp(20px,2.4vw,28px) 0;font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.2">
-              <span>{{ f.q }}</span>
-              <span aria-hidden="true" style="position:relative;flex-shrink:0;width:34px;height:34px;border-radius:50%;border:1.5px solid #631018;transform:{{ f.rot }};background:{{ f.iconBg }};transition:transform .45s cubic-bezier(.4,0,.2,1),background .3s ease">
-                <span style="position:absolute;left:50%;top:50%;width:13px;height:2px;margin:-1px 0 0 -6.5px;background:{{ f.iconFg }};transition:background .3s ease"></span>
-                <span style="position:absolute;left:50%;top:50%;width:2px;height:13px;margin:-6.5px 0 0 -1px;background:{{ f.iconFg }};transition:background .3s ease"></span>
-              </span>
-            </button>
-            <div style="display:grid;grid-template-rows:{{ f.rows }};transition:grid-template-rows .5s cubic-bezier(.4,0,.2,1)">
-              <div style="overflow:hidden;min-height:0">
-                <p style="padding:0 54px clamp(24px,3vw,32px) 0;font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.65;font-weight:500;max-width:62ch;opacity:{{ f.op }};transition:opacity .45s ease;text-wrap:pretty">{{ f.a }}</p>
-              </div>
-            </div>
-          </div>
-        </sc-for>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-screen-label="Convite final" style="position:relative;padding:clamp(56px,8vw,112px) clamp(22px,6vw,80px) 0">
-  <div style="max-width:1180px;margin:0 auto;position:relative;border-top:1.5px solid #631018;border-bottom:1.5px solid #631018;padding:clamp(72px,10vw,140px) 0">
-    <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;top:clamp(14px,2vw,28px);left:0;width:clamp(34px,5vw,72px);height:auto;opacity:.85;pointer-events:none"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="#631018"></polygon></svg>
-    <svg viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;bottom:clamp(14px,2vw,28px);right:0;width:clamp(38px,5.6vw,80px);height:auto;opacity:.85;pointer-events:none;animation:ldspin 44s linear infinite"><polygon points="50,2 53.8,40.8 83.9,16.1 59.2,46.2 98,50 59.2,53.8 83.9,83.9 53.8,59.2 50,98 46.2,59.2 16.1,83.9 40.8,53.8 2,50 40.8,46.2 16.1,16.1 46.2,40.8" fill="none" stroke="#631018" stroke-width="3" stroke-linejoin="round"></polygon></svg>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(36px,5vw,80px);align-items:center">
-      <h2 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,4.4vw,3.5rem);line-height:1.06;letter-spacing:-.025em;text-wrap:balance">Te faço o convite para caminharmos juntas.</h2>
-      <div>
-        <p style="font-weight:400;font-size:clamp(1.02rem,1.4vw,1.25rem);line-height:1.75;max-width:42ch;text-wrap:pretty">Se você sente que é hora de olhar para a sua história com mais cuidado e atenção, saiba que este é um espaço seguro.</p>
-        <div style="margin-top:clamp(30px,4vw,44px)"><a href="{{ contactUrl }}" style="display:inline-flex;align-items:center;justify-content:center;gap:12px;max-width:100%;background:#631018;color:#e9dfc7;font-weight:700;font-size:clamp(.92rem,1.25vw,1.1rem);text-align:center;text-wrap:balance;text-decoration:none;padding:18px clamp(24px,6vw,34px);border-radius:100px;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 34px -12px rgba(99,16,24,.6);color:#e9dfc7">Quero agendar minha primeira conversa →</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer style="padding:clamp(36px,5vw,56px) clamp(22px,6vw,80px) clamp(40px,6vw,72px)">
-  <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end">
+<!-- 2. ESPAÇO SEGURO -->
+<section class="section bg2" style="padding-top:clamp(48px,6vw,80px)">
+  <div class="wrap safe">
     <div>
-      <div style="font-family:'Archivo Black',sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em">Laura Danieli</div>
-      <div style="margin-top:10px;font-size:14px;font-weight:600;letter-spacing:.04em;opacity:.8;max-width:40ch;line-height:1.6">Psicóloga · CRP 08/47844 ·<br>Atendimento online para mulheres no Brasil e brasileiras no exterior.</div>
+      <h2 class="h2">Um espaço seguro para ser quem você é.</h2>
+      <p class="lead">A vida adulta cobra muito: presença, respostas, clareza sobre quem você é e o que você quer. No meio de tudo isso, algumas coisas ficam presas. Elas aparecem nos relacionamentos que se repetem, nas escolhas que travam, num cansaço que ainda não tem nome.</p>
     </div>
-    <a href="{{ instagramUrl }}" target="_blank" rel="noopener" style="color:#631018;text-decoration:none;font-weight:800;font-size:clamp(1rem,1.6vw,1.2rem);border-bottom:2px solid rgba(99,16,24,.45);padding:6px 0 3px" style-hover="border-bottom-color:#631018">@psic.laaura</a>
+    <blockquote class="quote">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <p>Freud dizia que aquilo que não encontra palavra acaba achando outro caminho para sair. Se existe um desconforto aí, mesmo difícil de explicar, ele já merece ser escutado.</p>
+    </blockquote>
+  </div>
+</section>
+
+<div class="wave-wrap bg2" aria-hidden="true"><svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,30 C300,0 520,70 760,40 C1000,10 1220,60 1440,30 L1440,70 L0,70 Z" fill="#2b0b10"/></svg></div>
+
+<!-- 3. COMO FUNCIONA -->
+<section class="section bg1" id="como-funciona" style="padding-top:clamp(48px,6vw,80px)">
+  <div class="wrap">
+    <h2 class="h2 center">Como é o processo</h2>
+    <div class="cards">
+      <article class="card"><div class="num">1</div><h3>Para quem é</h3><p>Para mulheres que querem se entender melhor, em qualquer momento da vida: transições, relações, sobrecarga, escolhas ou simplesmente a vontade de olhar para si com mais calma. Você não precisa chegar com as respostas prontas.</p></article>
+      <article class="card"><div class="num">2</div><h3>O que é a análise</h3><p>Um processo de escuta e autoconhecimento que acontece no seu tempo. Em vez de fórmulas prontas, a psicanálise abre espaço para você falar com liberdade e, aos poucos, encontrar novos sentidos para a sua história.</p></article>
+      <article class="card hl"><div class="num">3</div><h3>As sessões</h3><p>Encontros semanais e individuais de 50 minutos, presenciais em Francisco Beltrão ou online. Sem roteiro e sem tema obrigatório: você traz o que apareceu na semana, o que ficou travado ou o que tiver vontade de falar.</p></article>
+      <article class="card"><div class="num">4</div><h3>O primeiro encontro</h3><p>Um ponto de partida para a gente se conhecer. Você não precisa chegar com tudo organizado. Juntas, vamos entendendo o que faz sentido olhar primeiro.</p></article>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">Quero agendar meu primeiro encontro →</a></div>
+  </div>
+</section>
+
+<!-- 4. SOBRE -->
+<section class="about bg2" id="sobre">
+  <div class="about-photo"><img src="assets/laura-sobre.webp" alt="Laura Danieli sentada em uma poltrona, olhando para o lado" loading="lazy" width="896" height="1195"></div>
+  <div class="about-copy">
+    <h2 class="h2">Prazer, eu sou a Laura.</h2>
+    <div class="lead">
+      <p>Sou psicóloga de orientação psicanalítica e escolhi atender mulheres. Acredito na força que existe quando uma mulher decide dar nome ao que vive.</p>
+      <p>Meu compromisso é com uma escuta humana, ética e presente, longe de análises frias e de teorias que se afastam das pessoas. O espaço que ofereço é construído a duas mãos, com estudo cuidadoso de cada caso, afeto e respeito pela coragem que é falar sobre si.</p>
+    </div>
+    <div class="chips"><span class="chip">Psicologia · UNIPAR</span><span class="chip">CRP 08/47844</span><span class="chip">Orientação psicanalítica</span><span class="chip">Presencial e online</span></div>
+  </div>
+</section>
+
+<!-- 5. CULTURA POP -->
+<section class="section bg1">
+  <div class="wrap">
+    <div class="pop-head">
+      <h2 class="h2">Freud e a cultura pop falam a mesma língua.</h2>
+      <p class="lead">Filmes, séries, livros e músicas viram ponte. Uma cena pode ajudar a nomear o que parecia impossível de explicar, e um conceito difícil fica mais próximo quando ganha um rosto conhecido. Algumas obras que atravessam o meu universo:</p>
+    </div>
+    <div class="tabs-row">
+      <div class="tabs" role="tablist" aria-label="Categorias">
+        <button class="tab" role="tab" data-cat="filmes" aria-selected="true" aria-controls="track">Filmes</button>
+        <button class="tab" role="tab" data-cat="series" aria-selected="false" aria-controls="track">Séries</button>
+        <button class="tab" role="tab" data-cat="livros" aria-selected="false" aria-controls="track">Livros</button>
+      </div>
+      <div class="arrows">
+        <button class="arrow" id="prev" aria-label="Anterior">←</button>
+        <button class="arrow" id="next" aria-label="Próximo">→</button>
+      </div>
+    </div>
+    <div class="track" id="track" role="tabpanel"></div>
+  </div>
+</section>
+
+<!-- 6. PRESENCIAL OU ONLINE -->
+<section class="section bg2" id="onde-atendo">
+  <div class="wrap">
+    <h2 class="h2 center">Presencial ou online, você escolhe.</h2>
+    <div class="modes">
+      <article class="mode">
+        <div class="mode-media" id="gallery">
+          <img class="slide on" src="assets/clinica-fachada.webp" alt="Fachada da clínica Diálogos">
+          <img class="slide" src="assets/clinica-recepcao.webp" alt="Recepção da clínica" loading="lazy">
+          <img class="slide" src="assets/clinica-sala.webp" alt="Sala de atendimento" loading="lazy">
+          <img class="slide" src="assets/clinica-detalhe.webp" alt="Detalhe da sala de atendimento" loading="lazy">
+          <div class="dots" id="dots"></div>
+        </div>
+        <div class="mode-body">
+          <span class="eyebrow">Presencial</span>
+          <h3>Em Francisco Beltrão</h3>
+          <p>Na clínica Diálogos: um espaço reservado e tranquilo, pensado para você desacelerar e olhar para a sua história com calma.</p>
+          <p class="addr">Rua Giocondo Felipe, 576 · Vila Nova<br>Francisco Beltrão, PR</p>
+          <a class="map" href="https://www.google.com/maps/search/?api=1&query=Rua+Giocondo+Felipe%2C+576%2C+Vila+Nova%2C+Francisco+Beltr%C3%A3o+-+PR" target="_blank" rel="noopener">Ver no mapa →</a>
+        </div>
+      </article>
+      <div class="or" aria-hidden="true">ou</div>
+      <article class="mode">
+        <div class="mode-media illu"><img src="assets/online-alpha.webp" alt="Ilustração de notebook com videochamada e fone de ouvido" loading="lazy"></div>
+        <div class="mode-body">
+          <span class="eyebrow">Online</span>
+          <h3>De onde você estiver</h3>
+          <p>Por videochamada, no Brasil ou no exterior. A mesma escuta, com a praticidade de fazer a sessão em casa ou no intervalo da rotina.</p>
+          <ul class="list">
+            <li>Sessões semanais de 50 minutos</li>
+            <li>Para brasileiras em qualquer país</li>
+            <li>A mesma escuta do consultório</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">Quero agendar minha sessão →</a></div>
+  </div>
+</section>
+
+<!-- 7. DÚVIDAS -->
+<section class="section bg1" id="duvidas">
+  <div class="faq">
+    <div class="center">
+      <h2 class="h2">Dúvidas que costumam surgir por aqui</h2>
+      <p class="lead">Se a sua pergunta não estiver aqui, pode me mandar pelo <a href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">WhatsApp</a>.</p>
+    </div>
+    <div class="faq-list" id="faq"></div>
+  </div>
+</section>
+
+<div class="wave-wrap bg1" aria-hidden="true"><svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,35 L1440,70 L0,70 Z" fill="#3a1017"/></svg></div>
+
+<!-- 8. CONVITE -->
+<section class="section bg2 invite" id="convite" style="padding-top:clamp(48px,6vw,80px)">
+  <h2 class="h2">Te faço o convite para caminharmos juntas.</h2>
+  <p class="lead">Se você sente que é hora de olhar para a sua história com mais cuidado, me manda uma mensagem e me conta o que te trouxe até aqui.</p>
+  <a class="btn" href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">Quero agendar minha primeira conversa →</a>
+</section>
+
+</main>
+
+<!-- 9. RODAPÉ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-name">Laura Danieli</p>
+        <p style="margin-top:8px">Psicóloga de orientação psicanalítica<br>CRP 08/47844</p>
+      </div>
+      <div>
+        <p class="foot-label">Atendimento</p>
+        <p>Presencial em Francisco Beltrão, PR<br>Rua Giocondo Felipe, 576, Vila Nova<br>Online no Brasil e no exterior</p>
+      </div>
+      <div>
+        <p class="foot-label">Contato</p>
+        <a href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">WhatsApp</a><br>
+        <a href="https://instagram.com/psic.laaura" target="_blank" rel="noopener">Instagram @psic.laaura</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Laura Danieli · Psicóloga · CRP 08/47844</p>
   </div>
 </footer>
 
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;quoteSecs&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:5,&quot;min&quot;:3,&quot;max&quot;:12,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Movimento&quot;},&quot;uniAutoplay&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Movimento&quot;},&quot;uniSecs&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:6,&quot;min&quot;:3,&quot;max&quot;:15,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Movimento&quot;},&quot;contactUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20entender%20como%20funciona.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;},&quot;instagramUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://instagram.com/psic.laaura&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;}}">
-class Component extends DCLogic {
-  mq = typeof window !== 'undefined' && window.matchMedia ? window.matchMedia('(max-width: 640px)') : null;
-  state = { tabSel: 'filmes', activeTab: 'filmes', openFaq: 0, quoteIndex: 0, uniPage: 0, uniIdx: 0, uniOut: false, uniNoAnim: false, ind: { l: 0, w: 0 }, isMobile: !!(this.mq && this.mq.matches) };
-  uniRowRef = React.createRef();
-  tabRefs = { filmes: React.createRef(), series: React.createRef(), livros: React.createRef() };
+<div class="sticky" id="sticky"><a class="btn" href="https://wa.me/5546991398868?text=Oi%2C%20Laura!%20Vi%20seu%20site%20e%20quero%20agendar%20minha%20primeira%20conversa." target="_blank" rel="noopener">Agendar minha primeira conversa</a></div>
 
-  quotes = [
-    { text: 'Se o sofrimento realmente ensinasse, o mundo seria povoado apenas por sábios. A dor não tem nada a ensinar a quem não encontra coragem e força para ouvi-la.', author: 'Freud' },
-    { text: 'Escutar-se é desconhecer-se, despir-se do conhecido e das inúmeras versões que fazemos e refazemos de nós mesmos.', author: 'Thebas & Dunker' },
-    { text: 'Somos seres desejantes destinados à incompletude, e é isso que nos faz caminhar.', author: 'Lacan' },
-    { text: 'Que nada nos defina, que nada nos sujeite. Que a liberdade seja a nossa própria substância, já que viver é ser livre.', author: 'Simone de Beauvoir' },
-    { text: 'Aquilo que não enfrentamos em nós mesmos, encontraremos como destino.', author: 'Freud' },
-    { text: 'Qual a sua responsabilidade na desordem da qual você se queixa?', author: 'Freud' },
-  ];
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  data = {
+  // menu sólido ao rolar
+  var nav = document.getElementById('nav');
+  var sticky = document.getElementById('sticky');
+  var hero = document.getElementById('inicio');
+  var inviteVisible = false;
+  function onScroll(){
+    var y = window.scrollY;
+    nav.classList.toggle('solid', y > 40);
+    sticky.classList.toggle('show', y > hero.offsetHeight * 0.75 && !inviteVisible);
+  }
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){ inviteVisible = e[0].isIntersecting; onScroll(); }, {threshold:.2}).observe(document.getElementById('convite'));
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // cultura pop
+  var data = {
     filmes: [
-      { title: 'Cisne Negro', meta: 'Aronofsky · 2010', desc: 'Perfeccionismo, identidade e o preço de se perder em busca de ser perfeita.' },
-      { title: 'Harry Potter', meta: 'Columbus · 2001', desc: 'Pertencimento, identidade e o que significa encontrar onde você realmente é você.' },
-      { title: 'Shrek', meta: 'Adamson · 2001', desc: 'Camadas. Todo mundo tem camadas. E o que a gente esconde costuma ser o mais interessante.' },
-      { title: 'Advogado do Diabo', meta: 'Hackford · 1997', desc: 'Ambição, culpa e o que acontece quando a gente vende pedaços de si mesmo sem perceber.' },
-      { title: 'MJ', meta: 'Michael Jackson · 2025', desc: 'Gênio, dor e o preço de ser incompreendido pelo mundo enquanto carrega tanto por dentro.' },
+      ['Cisne Negro','Aronofsky · 2010','Perfeccionismo, identidade e o preço de se perder em busca de ser perfeita.'],
+      ['Harry Potter','Columbus · 2001','Pertencimento, identidade e o que significa encontrar onde você realmente é você.'],
+      ['Shrek','Adamson · 2001','Camadas. Todo mundo tem camadas. E o que a gente esconde costuma ser o mais interessante.'],
+      ['Advogado do Diabo','Hackford · 1997','Ambição, culpa e o que acontece quando a gente vende pedaços de si mesmo sem perceber.'],
+      ['MJ','Michael Jackson · 2025','Gênio, dor e o preço de ser incompreendido pelo mundo enquanto carrega tanto por dentro.']
     ],
     series: [
-      { title: 'A Residência Hill', meta: 'Flanagan · Netflix', desc: 'Luto, trauma e os fantasmas que a gente carrega, literalmente e não.' },
-      { title: 'Game of Thrones', meta: 'HBO · 2011', desc: 'Poder, desejo e o que as pessoas são capazes de fazer quando acham que merecem mais do que têm.' },
-      { title: 'Dexter', meta: 'Showtime · 2006', desc: 'O que a gente esconde do mundo para continuar funcionando. E o quanto isso cansa.' },
-      { title: 'Bridgerton', meta: 'Netflix · 2020', desc: 'Expectativa social, desejo e o que sobra quando a gente para de viver para a aprovação alheia.' },
-      { title: 'Stranger Things', meta: 'Netflix · 2016', desc: 'Amizade, medo e o que acontece quando o que está no escuro finalmente aparece.' },
-      { title: 'The Bear', meta: 'FX · 2022', desc: 'Perfeccionismo, pressão e o que o ambiente em que crescemos faz com a gente sem que a gente perceba.' },
-      { title: 'Euphoria', meta: 'HBO · 2019', desc: 'Identidade, vício e a dor de uma geração que sente tudo demais e não sabe onde colocar.' },
-      { title: 'A Casa do Dragão', meta: 'HBO · 2022', desc: 'Herança, poder feminino e o que acontece quando mulheres precisam jogar em regras que não fizeram para elas.' },
+      ['A Residência Hill','Flanagan · Netflix','Luto, trauma e os fantasmas que a gente carrega, literalmente e não.'],
+      ['Game of Thrones','HBO · 2011','Poder, desejo e o que as pessoas são capazes de fazer quando acham que merecem mais do que têm.'],
+      ['Dexter','Showtime · 2006','O que a gente esconde do mundo para continuar funcionando. E o quanto isso cansa.'],
+      ['Bridgerton','Netflix · 2020','Expectativa social, desejo e o que sobra quando a gente para de viver para a aprovação alheia.'],
+      ['Stranger Things','Netflix · 2016','Amizade, medo e o que acontece quando o que está no escuro finalmente aparece.'],
+      ['The Bear','FX · 2022','Perfeccionismo, pressão e o que o ambiente em que crescemos faz com a gente sem que a gente perceba.'],
+      ['Euphoria','HBO · 2019','Identidade, vício e a dor de uma geração que sente tudo demais e não sabe onde colocar.'],
+      ['A Casa do Dragão','HBO · 2022','Herança, poder feminino e o que acontece quando mulheres precisam jogar em regras que não fizeram para elas.']
     ],
     livros: [
-      { title: 'A gente mira no amor e acerta na solidão', meta: 'Ana Suy', desc: 'Amor, desejo, solidão e relações de forma extremamente acessível.' },
-      { title: 'Eu só existo no olhar do outro?', meta: 'Dunker & Ana Suy', desc: 'Identidade, reconhecimento e o papel do outro na construção de quem somos.' },
-      { title: 'O Palhaço e o Psicanalista', meta: 'Dunker & Thebas', desc: 'Um diálogo brilhante entre humor e psicanálise. Leve, inteligente e acessível.' },
-      { title: 'A Hora da Estrela', meta: 'Clarice Lispector', desc: 'Um mergulho na subjetividade, identidade e invisibilidade social.' },
-      { title: 'Memórias do Subsolo', meta: 'Dostoiévski', desc: 'Uma exploração brutal do inconsciente humano e da autossabotagem.' },
-      { title: 'Crime e Castigo', meta: 'Dostoiévski', desc: 'Estudo psicológico sobre culpa, moral e consciência.' },
-    ],
+      ['A gente mira no amor e acerta na solidão','Ana Suy','Amor, desejo, solidão e relações de forma extremamente acessível.'],
+      ['Eu só existo no olhar do outro?','Dunker & Ana Suy','Identidade, reconhecimento e o papel do outro na construção de quem somos.'],
+      ['O Palhaço e o Psicanalista','Dunker & Thebas','Um diálogo brilhante entre humor e psicanálise. Leve, inteligente e acessível.'],
+      ['A Hora da Estrela','Clarice Lispector','Um mergulho na subjetividade, identidade e invisibilidade social.'],
+      ['Memórias do Subsolo','Dostoiévski','Uma exploração brutal do inconsciente humano e da autossabotagem.'],
+      ['Crime e Castigo','Dostoiévski','Estudo psicológico sobre culpa, moral e consciência.']
+    ]
   };
+  var track = document.getElementById('track');
+  var tabs = document.querySelectorAll('.tab');
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+  function render(cat){
+    track.innerHTML = data[cat].map(function(it, i){
+      return '<article class="item"><div class="cover"><img src="assets/cultura/' + cat + '-' + (i+1) + '.webp" alt="Capa de ' + esc(it[0]) + '" loading="lazy"></div>' +
+        '<div class="info"><h3>' + esc(it[0]) + '</h3><p class="meta">' + esc(it[1]) + '</p><p>' + esc(it[2]) + '</p></div></article>';
+    }).join('');
+    track.scrollLeft = 0;
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      if (t.getAttribute('aria-selected') === 'true') return;
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      track.style.opacity = 0;
+      setTimeout(function(){ render(t.dataset.cat); track.style.opacity = 1; }, reduce ? 0 : 250);
+    });
+  });
+  function step(dir){
+    var card = track.querySelector('.item');
+    if (card) track.scrollBy({left: dir * (card.offsetWidth + 18) * 2, behavior: reduce ? 'auto' : 'smooth'});
+  }
+  document.getElementById('prev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('next').addEventListener('click', function(){ step(1); });
+  render('filmes');
 
-  faqBase = [
-    { q: 'Nunca fiz terapia. O que devo falar na primeira sessão?', a: 'Você pode encarar esse momento como um primeiro encontro. Não precisa preparar um roteiro, ensaiar um assunto ou saber explicar tudo bem certinho. Essa primeira conversa é um espaço para nos conhecermos, entender o que te trouxe até aqui e sentirmos se o meu trabalho faz sentido para você. Se não souber por onde começar a falar, não tem problema: a gente descobre juntas, no seu ritmo.' },
-    { q: 'Preciso estar passando por um momento muito difícil para agendar?', a: 'Muitas vezes a gente acha que só deve procurar ajuda quando atinge o limite, mas não precisa ser assim. A análise serve tanto para momentos de transição delicados quanto para o simples desejo de se compreender melhor, organizar seus pensamentos e viver a rotina com mais clareza.' },
-    { q: 'O atendimento online funciona?', a: 'Funciona com a mesma profundidade. A essência do processo está na qualidade do vínculo e da escuta, e isso atravessa qualquer tela. A grande diferença é a praticidade: você pode fazer suas sessões do aconchego da sua casa, no seu intervalo de trabalho ou de onde estiver no mundo.' },
-    { q: 'Quanto tempo dura o processo de análise?', a: 'A análise não funciona com um prazo engessado de início, meio e fim. O tempo do processo respeita o seu próprio ritmo, os temas que você deseja explorar e as transformações que vão acontecendo ao longo do caminho. O fundamental é que cada encontro continue fazendo sentido para você.' },
-    { q: 'Como funcionam os valores e o investimento das sessões?', a: 'Trabalho com um valor base de referência, mas faço questão de conversar sobre isso no nosso primeiro encontro. Estou sempre aberta a escutar o seu momento atual para construirmos uma condição justa e viável, garantindo que você consiga iniciar e, principalmente, manter o seu acompanhamento de forma sustentável.' },
-    { q: 'Você atende por plano de saúde?', a: 'Os meus atendimentos são realizados exclusivamente na modalidade particular. Contudo, emitimos todos os recibos e documentações necessárias para que você possa solicitar o reembolso diretamente com o seu convênio, caso o seu plano ofereça essa opção. Além disso, conversamos na primeira sessão para alinhar um investimento que se adeque à sua realidade.' },
+  // galeria da clínica
+  var slides = document.querySelectorAll('#gallery .slide');
+  var dotsEl = document.getElementById('dots');
+  var cur = 0, timer;
+  slides.forEach(function(_, i){
+    var b = document.createElement('button');
+    b.className = 'dot'; b.setAttribute('aria-label', 'Foto ' + (i+1));
+    b.innerHTML = '<span></span>';
+    b.addEventListener('click', function(){ show(i); restart(); });
+    dotsEl.appendChild(b);
+  });
+  var dots = dotsEl.querySelectorAll('.dot');
+  function show(i){
+    cur = i;
+    slides.forEach(function(s, k){ s.classList.toggle('on', k === i); });
+    dots.forEach(function(d, k){ d.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+  }
+  function restart(){
+    clearInterval(timer);
+    if (!reduce) timer = setInterval(function(){ if (!document.hidden) show((cur + 1) % slides.length); }, 4000);
+  }
+  show(0); restart();
+
+  // dúvidas
+  var faqs = [
+    ['Nunca fiz terapia. O que eu falo na primeira sessão?','Você pode encarar esse momento como um primeiro encontro. Não precisa ensaiar nem saber explicar tudo direitinho. A gente conversa sobre o que te trouxe até aqui, e você sente se o meu trabalho faz sentido para você. Se não souber por onde começar, descobrimos juntas, no seu ritmo.'],
+    ['Preciso estar passando por um momento muito difícil para procurar?','Você não precisa esperar chegar no limite. A análise acolhe momentos delicados e também o desejo de se entender melhor e viver a rotina com mais clareza.'],
+    ['O atendimento online funciona?','Funciona com a mesma profundidade. O que sustenta o processo é o vínculo e a escuta, e eles atravessam a tela. Se você preferir o presencial, também atendo em Francisco Beltrão.'],
+    ['Quanto tempo dura a análise?','Não existe um prazo fixo. O processo respeita o seu ritmo, os temas que você quer explorar e o que vai se transformando ao longo do caminho.'],
+    ['Como funcionam os valores?','Os valores são conversados individualmente, no primeiro contato. Assim, você tira todas as suas dúvidas antes de agendar.'],
+    ['Você atende por plano de saúde?','Os atendimentos são particulares. Emito recibo para que você possa pedir reembolso ao seu plano, caso ele ofereça essa opção.']
   ];
-
-  tabsBase = [{ label: 'Filmes', key: 'filmes' }, { label: 'Séries', key: 'series' }, { label: 'Livros', key: 'livros' }];
-
-  componentDidMount() {
-    if (this.mq) {
-      this._onMq = (e) => this.setState({ isMobile: e.matches, uniIdx: 0 }, () => this.measureTab());
-      if (this.mq.addEventListener) this.mq.addEventListener('change', this._onMq); else this.mq.addListener(this._onMq);
-      if (this.mq.matches !== this.state.isMobile) this.setState({ isMobile: this.mq.matches });
-    }
-    this._reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-    this.scheduleQuote();
-    this.scheduleUni();
-    this._onResize = () => this.measureTab();
-    window.addEventListener('resize', this._onResize);
-    this.measureTab();
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => this.measureTab());
-    this._mT = setTimeout(() => this.measureTab(), 700);
-  }
-  componentWillUnmount() {
-    clearTimeout(this._qT); clearTimeout(this._uT); clearTimeout(this._tabT); clearTimeout(this._mT);
-    window.removeEventListener('resize', this._onResize);
-    if (this.mq) { if (this.mq.removeEventListener) this.mq.removeEventListener('change', this._onMq); else this.mq.removeListener(this._onMq); }
-  }
-
-  measureTab(key) {
-    const r = this.tabRefs[key || this.state.tabSel];
-    const el = r && r.current;
-    if (!el) return null;
-    const ind = { l: el.offsetLeft, w: el.offsetWidth };
-    if (!key && (ind.l !== this.state.ind.l || ind.w !== this.state.ind.w)) this.setState({ ind });
-    return ind;
-  }
-
-  scheduleQuote() {
-    clearTimeout(this._qT);
-    this._qT = setTimeout(() => {
-      if (!document.hidden) this.setState(s => ({ quoteIndex: (s.quoteIndex + 1) % this.quotes.length }));
-      this.scheduleQuote();
-    }, (this.props.quoteSecs ?? 5) * 1000);
-  }
-  setQuote(i) { this.setState({ quoteIndex: i }); this.scheduleQuote(); }
-
-  pages(key) { return Math.max(1, Math.ceil((this.data[key] || []).length / 3)); }
-  scheduleUni() {
-    clearTimeout(this._uT);
-    this._uT = setTimeout(() => {
-      const s = this.state;
-      const ok = (this.props.uniAutoplay ?? true) && !s.isMobile && !this._hover && !this._reduce && !document.hidden && !s.uniOut && Date.now() > (this._pauseUntil || 0);
-      if (ok) this.setState(st => ({ uniPage: (st.uniPage + 1) % this.pages(st.activeTab) }));
-      this.scheduleUni();
-    }, (this.props.uniSecs ?? 6) * 1000);
-  }
-  pause() { this._pauseUntil = Date.now() + 10000; }
-  goPage(i) { this.pause(); this.setState({ uniPage: i }); }
-
-  setTab(key) {
-    if (key === this.state.tabSel) return;
-    this.pause();
-    const ind = this.measureTab(key) || this.state.ind;
-    this.setState({ tabSel: key, ind, uniOut: true });
-    clearTimeout(this._tabT);
-    this._tabT = setTimeout(() => {
-      if (this.uniRowRef.current) this.uniRowRef.current.scrollLeft = 0;
-      this.setState({ activeTab: key, uniPage: 0, uniIdx: 0, uniNoAnim: true }, () => {
-        requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ uniOut: false, uniNoAnim: false })));
-      });
-    }, 260);
-  }
-
-  hoverOn = () => { this._hover = true; };
-  hoverOff = () => { this._hover = false; };
-  onTrackDown = (e) => { this._px = e.clientX; };
-  onTrackUp = (e) => {
-    if (this._px == null) return;
-    const dx = e.clientX - this._px; this._px = null;
-    if (Math.abs(dx) < 50) return;
-    const n = this.pages(this.state.activeTab);
-    this.goPage((this.state.uniPage + (dx < 0 ? 1 : -1) + n) % n);
-  };
-
-  onUniScroll = (e) => {
-    const el = e.currentTarget, first = el.firstElementChild;
-    if (!first) return;
-    const i = Math.round(el.scrollLeft / (first.getBoundingClientRect().width + 12));
-    if (i !== this.state.uniIdx) this.setState({ uniIdx: i });
-  };
-  scrollToCard(i) {
-    const el = this.uniRowRef.current, first = el && el.firstElementChild;
-    if (!first) return;
-    el.scrollTo({ left: i * (first.getBoundingClientRect().width + 12), behavior: 'smooth' });
-  }
-
-  renderVals() {
-    const s = this.state;
-    const isMobile = !!s.isMobile;
-    const active = s.activeTab;
-    const all = (this.data[active] || []).map((it, k) => ({ ...it, hasMeta: !!it.meta, cover: 'assets/covers/u-' + active + '-' + k + '.webp' }));
-    const n = this.pages(active);
-    const page = s.uniPage % n;
-    const uniPages = Array.from({ length: n }, (_, p) => ({ hidden: p === page ? 'false' : 'true', items: all.slice(p * 3, p * 3 + 3) }));
-    const qn = this.quotes.length;
-    return {
-      isMobile, isDesktop: !isMobile,
-      contactUrl: this.props.contactUrl || 'https://wa.me/5546991398868?text=' + encodeURIComponent('Oi, Laura! Vi seu site e quero entender como funciona.'),
-      instagramUrl: this.props.instagramUrl || 'https://instagram.com/psic.laaura',
-      quotes: this.quotes.map((x, i) => ({
-        text: '\u201C' + x.text + '\u201D', author: x.author,
-        hidden: i === s.quoteIndex ? 'false' : 'true',
-        op: i === s.quoteIndex ? 1 : 0,
-        tf: i === s.quoteIndex ? 'none' : (i === (s.quoteIndex + qn - 1) % qn ? 'translateY(-12px)' : 'translateY(12px)'),
-      })),
-      quoteDots: this.quotes.map((_, i) => ({ label: 'Frase ' + (i + 1), w: i === s.quoteIndex ? '22px' : '7px', op: i === s.quoteIndex ? 1 : 0.3, onClick: () => this.setQuote(i) })),
-      tabs: this.tabsBase.map(t => ({
-        label: t.label, ref: this.tabRefs[t.key],
-        sel: s.tabSel === t.key ? 'true' : 'false',
-        op: s.tabSel === t.key ? 1 : 0.5,
-        onClick: () => this.setTab(t.key),
-      })),
-      indW: s.ind.w + 'px',
-      indX: 'translateX(' + s.ind.l + 'px)',
-      uniPages,
-      uniTrackX: 'translateX(calc(' + (-page * 100) + '% - ' + (page * 28) + 'px)) translateY(' + (s.uniOut ? 14 : 0) + 'px)',
-      uniOp: s.uniOut ? 0 : 1,
-      uniTrans: s.uniNoAnim ? 'opacity .35s ease' : 'transform .85s cubic-bezier(.77,0,.18,1), opacity .35s ease',
-      uniRowY: s.uniOut ? 'translateY(14px)' : 'none',
-      uniDots: uniPages.map((_, i) => ({ label: 'Página ' + (i + 1), w: i === page ? '28px' : '9px', op: i === page ? 1 : 0.3, onClick: () => this.goPage(i) })),
-      onTrackDown: this.onTrackDown, onTrackUp: this.onTrackUp, hoverOn: this.hoverOn, hoverOff: this.hoverOff,
-      universeAll: all,
-      uniRowRef: this.uniRowRef,
-      onUniScroll: this.onUniScroll,
-      uniMobileDots: all.map((_, i) => ({ label: 'Item ' + (i + 1), w: i === s.uniIdx ? '20px' : '7px', op: i === s.uniIdx ? 1 : 0.3, onClick: () => this.scrollToCard(i) })),
-      faqs: this.faqBase.map((f, i) => {
-        const open = s.openFaq === i;
-        return {
-          q: f.q, a: f.a, open: open ? 'true' : 'false',
-          rows: open ? '1fr' : '0fr', op: open ? 0.92 : 0,
-          rot: open ? 'rotate(45deg)' : 'none',
-          iconBg: open ? '#631018' : 'transparent', iconFg: open ? '#e9dfc7' : '#631018',
-          onClick: () => this.setState(st => ({ openFaq: st.openFaq === i ? -1 : i })),
-        };
-      }),
-    };
-  }
-}
+  var faqEl = document.getElementById('faq');
+  faqEl.innerHTML = faqs.map(function(f, i){
+    return '<div class="faq-item' + (i === 0 ? ' open' : '') + '"><button class="faq-q" aria-expanded="' + (i === 0) + '" aria-controls="fa' + i + '"><span>' + esc(f[0]) + '</span><span class="faq-ico" aria-hidden="true"></span></button>' +
+      '<div class="faq-a" id="fa' + i + '"><div><p>' + esc(f[1]) + '</p></div></div></div>';
+  }).join('');
+  faqEl.querySelectorAll('.faq-q').forEach(function(b){
+    b.addEventListener('click', function(){
+      var item = b.parentNode, open = !item.classList.contains('open');
+      faqEl.querySelectorAll('.faq-item').forEach(function(x){ x.classList.remove('open'); x.firstChild.setAttribute('aria-expanded','false'); });
+      if (open){ item.classList.add('open'); b.setAttribute('aria-expanded','true'); }
+    });
+  });
+})();
 </script>
 </body>
 </html>
